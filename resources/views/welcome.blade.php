@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <script src="https://unpkg.com/@lucide/web-icons"></script>
     <style>
         :root {
@@ -55,9 +55,19 @@
         }
 
         @keyframes float-particle {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(10px, -15px) rotate(10deg); }
-            66% { transform: translate(-10px, 5px) rotate(-10deg); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(10px, -15px) rotate(10deg);
+            }
+
+            66% {
+                transform: translate(-10px, 5px) rotate(-10deg);
+            }
         }
 
         .animate-float-particle {
@@ -99,10 +109,7 @@
 
                 <div class="flex items-center gap-4">
                     <a href="/login"
-                        class="hidden sm:block text-sm font-bold text-slate-700 hover:text-primary transition-colors">Login</a>
-                    <a href="#cta"
-                        class="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 active:scale-95">Start
-                        Generating Prompt</a>
+                        class="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 active:scale-95">Login</a>
                 </div>
             </div>
         </div>
@@ -112,12 +119,12 @@
     <section id="home" class="pt-32 pb-16 sm:pt-48 sm:pb-32 overflow-hidden relative">
         <!-- Background Linear Grid Pattern -->
         <div class="absolute inset-0 opacity-[0.05] hero-grid -z-10 bg-[linear-gradient(to_right,#279b84_1px,transparent_1px),linear-gradient(to_bottom,#279b84_1px,transparent_1px)] bg-size-[40px_40px]"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
             <!-- Enhanced decorative blobs -->
             <div class="absolute -top-24 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
             <div class="absolute top-40 -right-20 w-120 h-120 bg-indigo-500/10 rounded-full blur-[140px] -z-10 animate-pulse" style="animation-delay: 2s;"></div>
-            
+
             <!-- Removed Particles - Cleaner Aesthetic -->
 
             <div class="max-w-3xl mx-auto relative z-10">
@@ -133,7 +140,7 @@
                     Generate Konten Visual <span class="text-gradient">Profesional</span> dengan AI
                 </h1>
                 <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-10 px-4">
-                    Platform AI yang mudah digunakan dengan 8 kategori konten lengkap. Support ChatGPT, Gemini, dan AI provider lainnya. Prompt terstruktur, customizable output, dan ratusan contoh siap pakai.
+                    Platform AI yang mudah digunakan dengan kategori konten lengkap. Support ChatGPT, Gemini, dan AI provider lainnya. Prompt terstruktur, customizable output, dan ratusan contoh siap pakai.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
                     <a href="#cta"
@@ -145,7 +152,7 @@
                     </a>
                     <a href="#templates"
                         class="w-full sm:w-auto bg-white border-2 border-slate-100 text-slate-700 px-8 py-4 rounded-full text-lg font-bold hover:border-primary hover:text-primary transition-all active:scale-95 flex items-center justify-center gap-2">
-                        Lihat 8 Kategori
+                        Lihat Kategori
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -156,15 +163,21 @@
                 <!-- Trust Badges -->
                 <div class="pt-2 flex flex-wrap justify-center items-center gap-x-8 gap-y-4 opacity-60 grayscale hover:grayscale-0 transition-all duration-700 pointer-events-none">
                     <span class="text-sm font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M22.28 12c0-5.68-4.6-10.28-10.28-10.28S1.72 6.32 1.72 12c0 4.86 3.39 8.93 7.9 9.94v-7.03H7.1v-2.91h2.52v-2.21c0-2.49 1.48-3.87 3.76-3.87 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.91h-2.33v7.03c4.51-1.01 7.9-5.08 7.9-9.94z"/></svg>
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.28 12c0-5.68-4.6-10.28-10.28-10.28S1.72 6.32 1.72 12c0 4.86 3.39 8.93 7.9 9.94v-7.03H7.1v-2.91h2.52v-2.21c0-2.49 1.48-3.87 3.76-3.87 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.91h-2.33v7.03c4.51-1.01 7.9-5.08 7.9-9.94z" />
+                        </svg>
                         Optimized
                     </span>
                     <span class="text-sm font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
                         Professional
                     </span>
                     <span class="text-sm font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                        </svg>
                         Secure AI
                     </span>
                 </div>
@@ -175,7 +188,7 @@
                 <div
                     class="absolute inset-0 bg-primary/20 blur-[120px] -z-10 opacity-50 group-hover:opacity-80 transition-opacity duration-1000">
                 </div>
-                
+
                 <!-- Extra Decorative Borders -->
                 <div class="absolute -inset-2 bg-linear-to-r from-primary/5 via-primary/20 to-indigo-500/5 rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
@@ -355,19 +368,19 @@
                 <div class="relative">
                     <!-- Decorative vertical line -->
                     <div class="absolute -left-6 top-0 bottom-0 w-1 bg-linear-to-b from-primary/50 to-transparent rounded-full hidden lg:block"></div>
-                    
+
                     <span class="inline-block py-1 px-4 rounded-full bg-slate-100 text-slate-500 text-[10px] font-bold tracking-widest uppercase mb-6 border border-slate-200 shadow-sm">
                         Library Konten Terbesar
                     </span>
-                    
+
                     <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 leading-[1.15] mb-8">
                         Satu Hub, <span class="text-gradient italic">Ribuan Kemungkinan</span> Konten Visual
                     </h2>
-                    
+
                     <p class="text-lg text-slate-600 mb-10 leading-relaxed">
                         Hentikan kebuntuan kreatif sekarang juga. RIA Prompt memberikan Anda akses ke struktur prompt profesional yang mencakup <span class="font-bold text-slate-900 italic">setiap sudut</span> kebutuhan konten digital Anda.
                     </p>
-                    
+
                     <ul class="space-y-6 mb-12">
                         <li class="flex items-start gap-4 group/item">
                             <div class="w-10 h-10 bg-primary/10 text-primary rounded-xl flex items-center justify-center flex-shrink-0 group-hover/item:bg-primary group-hover/item:text-white transition-colors duration-300">
@@ -376,7 +389,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="font-bold text-slate-900 mb-1 group-hover/item:text-primary transition-colors">8 Kategori Strategis</p>
+                                <p class="font-bold text-slate-900 mb-1 group-hover/item:text-primary transition-colors">Kategori Strategis</p>
                                 <p class="text-sm text-slate-500">Mulai dari Marketing hingga Storytelling, semua ada blueprint-nya.</p>
                             </div>
                         </li>
@@ -404,7 +417,7 @@
                             </div>
                         </li>
                     </ul>
-                    
+
                     <a href="#cta"
                         class="inline-flex items-center gap-3 bg-primary text-white px-10 py-5 rounded-full text-lg font-extrabold hover:bg-primary-dark transition-all shadow-2xl shadow-primary/30 group active:scale-95">
                         Eksplorasi Semua Kategori
@@ -442,7 +455,7 @@
                         class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mx-auto mb-8 text-2xl font-black shadow-xl shadow-primary/20 rotate-3 group-hover:rotate-0 transition-transform">
                         1</div>
                     <h3 class="text-2xl font-bold mb-4">Pilih Kategori</h3>
-                    <p class="text-slate-400 leading-relaxed text-sm">Pilih dari 8 kategori: Promosi, Edukasi, Event, Entertainment, Motivasi, Lifestyle, Berita, atau Corporate.</p>
+                    <p class="text-slate-400 leading-relaxed text-sm">Pilih dari kategori: Promosi, Edukasi, Event, Entertainment, Motivasi, Lifestyle, Berita, atau Corporate.</p>
                     <div
                         class="hidden md:block absolute top-1/2 -right-4 translate-x-1/2 -translate-y-1/2 text-primary/30 z-20">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -485,16 +498,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
                 <div class="max-w-xl">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">8 Kategori Konten Lengkap</h2>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Kategori Konten Lengkap</h2>
                     <p class="text-slate-600">Setiap kategori dilengkapi dengan contoh penggunaan dan berbagai pilihan tone yang bisa disesuaikan.</p>
                 </div>
-                <a href="/templates" class="text-primary font-bold hover:underline flex items-center gap-2">
-                    Lihat Semua Kategori
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                </a>
+
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -506,13 +513,13 @@
                 </div>
                 <div
                     class="bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:border-primary hover:bg-white hover:shadow-xl hover:shadow-primary/10 transition-all text-center group">
-                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">�</div>
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">📚</div>
                     <h4 class="font-bold text-slate-800 text-sm mb-2">Edukasi / Informasi</h4>
                     <p class="text-xs text-slate-500">Infografis, tips & trik, tutorial</p>
                 </div>
                 <div
                     class="bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:border-primary hover:bg-white hover:shadow-xl hover:shadow-primary/10 transition-all text-center group">
-                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">�</div>
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">📢</div>
                     <h4 class="font-bold text-slate-800 text-sm mb-2">Event / Pengumuman</h4>
                     <p class="text-xs text-slate-500">Poster event, undangan digital</p>
                 </div>
@@ -545,6 +552,89 @@
                     <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🏢</div>
                     <h4 class="font-bold text-slate-800 text-sm mb-2">Company / Corporate</h4>
                     <p class="text-xs text-slate-500">Company profile, internal campaign</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Results Section -->
+    <section class="py-24 bg-gradient-to-br from-slate-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Hasil Nyata</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Hasil Konten Visual dari Prompt Kami</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Lihat berbagai contoh konten yang dihasilkan menggunakan RIA Prompt untuk berbagai kategori</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <!-- Promo -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/promo.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Promo 2 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/promo2.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Edukasi -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/edukasi.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Edukasi 2 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/edukasi2.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Edukasi 3 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/edukasi3.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Event -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/event.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/event2.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Hiburan -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/hiburan.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Lifestyle -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/lifestyle.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Motivasi -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/motivasi.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
             </div>
         </div>
@@ -661,421 +751,11 @@
         </div>
     </section>
 
-    <!-- Demo Section -->
-    <section class="py-24 bg-slate-50 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Hasil Konten Visual dari Prompt Kami</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">Lihat contoh hasil konten visual yang dihasilkan menggunakan prompt terstruktur dari RIA Prompt di berbagai AI platform.</p>
-            </div>
-
-            <!-- Slick Slider Container -->
-            <div class="image-slider px-12">
-                <!-- Slide 1 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/e74c3c/ffffff?text=Promosi+Marketing" 
-                             alt="Marketing Content" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">🎯</span>
-                                    <span class="text-sm font-bold">Promosi / Marketing</span>
-                                </div>
-                                <p class="text-xs opacity-90">Persuasive & Urgent tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/3498db/ffffff?text=Edukasi+Informasi" 
-                             alt="Education Content" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">📚</span>
-                                    <span class="text-sm font-bold">Edukasi / Informasi</span>
-                                </div>
-                                <p class="text-xs opacity-90">Educative & Friendly tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/f39c12/ffffff?text=Event+Pengumuman" 
-                             alt="Event Content" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">📢</span>
-                                    <span class="text-sm font-bold">Event / Pengumuman</span>
-                                </div>
-                                <p class="text-xs opacity-90">Exciting & Inviting tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/e91e63/ffffff?text=Hiburan+Fun" 
-                             alt="Entertainment Content" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">🎉</span>
-                                    <span class="text-sm font-bold">Hiburan / Fun</span>
-                                </div>
-                                <p class="text-xs opacity-90">Humorous & Witty tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 5 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/9b59b6/ffffff?text=Motivasi+Inspirasi" 
-                             alt="Motivation Content" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">✨</span>
-                                    <span class="text-sm font-bold">Motivasi / Inspirasi</span>
-                                </div>
-                                <p class="text-xs opacity-90">Inspirational tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 6 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/ff6b6b/ffffff?text=Lifestyle+Kuliner" 
-                             alt="Lifestyle Content" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">🍽️</span>
-                                    <span class="text-sm font-bold">Lifestyle & Kuliner</span>
-                                </div>
-                                <p class="text-xs opacity-90">Warm & Inviting tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 7 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/95a5a6/ffffff?text=Berita+Update" 
-                             alt="News Content" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">📰</span>
-                                    <span class="text-sm font-bold">Berita & Update</span>
-                                </div>
-                                <p class="text-xs opacity-90">Neutral & Informative tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 8 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/16a085/ffffff?text=Company+Corporate" 
-                             alt="Corporate Content" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">🏢</span>
-                                    <span class="text-sm font-bold">Company / Corporate</span>
-                                </div>
-                                <p class="text-xs opacity-90">Professional & Trustworthy tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 9 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/c0392b/ffffff?text=Promosi+Friendly" 
-                             alt="Marketing Content 2" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">🎯</span>
-                                    <span class="text-sm font-bold">Promosi / Marketing</span>
-                                </div>
-                                <p class="text-xs opacity-90">Friendly & Approachable tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 10 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/2980b9/ffffff?text=Edukasi+Simple" 
-                             alt="Education Content 2" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">📚</span>
-                                    <span class="text-sm font-bold">Edukasi / Informasi</span>
-                                </div>
-                                <p class="text-xs opacity-90">Simple & Clear tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 11 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/d35400/ffffff?text=Event+Festive" 
-                             alt="Event Content 2" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">📢</span>
-                                    <span class="text-sm font-bold">Event / Pengumuman</span>
-                                </div>
-                                <p class="text-xs opacity-90">Festive & Celebratory tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 12 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/8e44ad/ffffff?text=Hiburan+Playful" 
-                             alt="Entertainment Content 2" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">🎉</span>
-                                    <span class="text-sm font-bold">Hiburan / Fun</span>
-                                </div>
-                                <p class="text-xs opacity-90">Playful & Quirky tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 13 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/27ae60/ffffff?text=Motivasi+Empowering" 
-                             alt="Motivation Content 2" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">✨</span>
-                                    <span class="text-sm font-bold">Motivasi / Inspirasi</span>
-                                </div>
-                                <p class="text-xs opacity-90">Empowering & Uplifting tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 14 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/e67e22/ffffff?text=Lifestyle+Trendy" 
-                             alt="Lifestyle Content 2" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">🍽️</span>
-                                    <span class="text-sm font-bold">Lifestyle & Kuliner</span>
-                                </div>
-                                <p class="text-xs opacity-90">Trendy & Modern tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 15 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/34495e/ffffff?text=Berita+Breaking" 
-                             alt="News Content 2" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">📰</span>
-                                    <span class="text-sm font-bold">Berita & Update</span>
-                                </div>
-                                <p class="text-xs opacity-90">Urgent & Breaking tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 16 -->
-                <div class="px-3">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl group">
-                        <img src="https://placehold.co/600x800/1abc9c/ffffff?text=Corporate+Innovative" 
-                             alt="Corporate Content 2" 
-                             class="w-full aspect-[3/4] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-2xl">🏢</span>
-                                    <span class="text-sm font-bold">Company / Corporate</span>
-                                </div>
-                                <p class="text-xs opacity-90">Innovative & Forward tone</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <div class="inline-flex items-center gap-2 px-6 py-3 bg-slate-50 border border-slate-100 rounded-full shadow-sm">
-                    <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
-                    <p class="text-slate-600 font-bold text-sm tracking-wide uppercase">Semua hasil visual di atas dibuat menggunakan <span class="text-primary italic">Prompt RIA Prompt</span></p>
-                </div>
-            </div>
-        </div>
-
-        <style>
-            .slick-prev, .slick-next {
-                width: 48px;
-                height: 48px;
-                background: white !important;
-                border-radius: 50%;
-                box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-                z-index: 10;
-            }
-            .slick-prev:hover, .slick-next:hover {
-                background: var(--primary) !important;
-            }
-            .slick-prev:before, .slick-next:before {
-                color: #334155;
-                font-size: 20px;
-            }
-            .slick-prev:hover:before, .slick-next:hover:before {
-                color: white;
-            }
-            .slick-prev {
-                left: -24px;
-            }
-            .slick-next {
-                right: -24px;
-            }
-            .slick-dots {
-                bottom: -40px;
-            }
-            .slick-dots li button:before {
-                font-size: 12px;
-                color: var(--primary);
-            }
-            .slick-dots li.slick-active button:before {
-                color: var(--primary);
-            }
-        </style>
-
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('.image-slider').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                    arrows: true,
-                    dots: true,
-                    responsive: [
-                        {
-                            breakpoint: 1280,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 640,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                            }
-                        }
-                    ]
-                });
-
-                $('.testimonial-slider').slick({
-                    infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 5000,
-                    arrows: true,
-                    dots: true,
-                    responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 640,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                            }
-                        }
-                    ]
-                });
-            });
-        </script>
-    </section>
-
     <!-- Benefit Section -->
     <section class="py-24 bg-slate-50/50 relative overflow-hidden">
         <!-- Subtle background element -->
         <div class="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-primary/5 to-transparent -z-10"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20">
                 <span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Kenapa RIA Prompt?</span>
@@ -1151,8 +831,9 @@
                     <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
                         <div class="flex gap-1 text-amber-400 mb-6">
                             @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            @endfor
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                @endfor
                         </div>
                         <p class="text-slate-600 mb-8 italic">"Sangat terbantu! Dulu harus bayar freelancer tiap mau posting promo, sekarang cukup pakai RIA Prompt dan AI, hasilnya jauh lebih variatif dan cepet banget."</p>
                         <div class="flex items-center gap-4">
@@ -1170,8 +851,9 @@
                     <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
                         <div class="flex gap-1 text-amber-400 mb-6">
                             @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            @endfor
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                @endfor
                         </div>
                         <p class="text-slate-700 mb-8 italic font-medium">"Investasi 99rb terbaik tahun ini. Prompt-nya beneran terstruktur, jadi AI nggak ngawur kasih hasilnya. Udah kayak punya art director pribadi di browser!"</p>
                         <div class="flex items-center gap-4">
@@ -1189,8 +871,9 @@
                     <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
                         <div class="flex gap-1 text-amber-400 mb-6">
                             @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            @endfor
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                @endfor
                         </div>
                         <p class="text-slate-600 mb-8 italic">"Nggak nyangka AI bisa se-keren ini kalau dikasih prompt yang bener. RIA Prompt beneran jadi solusi buat UMKM kayak saya yang budget-nya terbatas buat desain."</p>
                         <div class="flex items-center gap-4">
@@ -1208,8 +891,9 @@
                     <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
                         <div class="flex gap-1 text-amber-400 mb-6">
                             @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            @endfor
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                @endfor
                         </div>
                         <p class="text-slate-600 mb-8 italic">"Sebagai UMKM, budget marketing saya sangat terbatas. RIA Prompt beneran jadi penyelamat buat bikin konten katalog produk yang profesional!"</p>
                         <div class="flex items-center gap-4">
@@ -1227,8 +911,9 @@
                     <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
                         <div class="flex gap-1 text-amber-400 mb-6">
                             @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            @endfor
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                @endfor
                         </div>
                         <p class="text-slate-600 mb-8 italic">"Udah coba berbagai prompt engineering sendiri tapi hasilnya sering meleset. Begitu pakai RIA Prompt, baru deh kerasa bedanya. Lebih presisi!"</p>
                         <div class="flex items-center gap-4">
@@ -1266,7 +951,7 @@
                         <span class="inline-block px-4 py-1 bg-white/20 rounded-full text-white text-xs font-bold uppercase tracking-wider mb-4">Lifetime Access</span>
                         <h3 class="text-2xl font-bold text-white mb-2">RIA Prompt Premium</h3>
                         <p class="text-white/80 text-sm mb-8">Akses selamanya tanpa biaya berlangganan bulanan</p>
-                        
+
                         <div class="flex items-end gap-2 mb-8">
                             <span class="text-6xl font-extrabold text-white">Rp 99rb</span>
                             <span class="text-white/60 font-medium mb-3 line-through">Rp 299rb</span>
@@ -1290,7 +975,7 @@
                                     <svg class="w-5 h-5 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                     </svg>
-                                    <span><strong>8 Kategori Lengkap</strong> - Akses semua kategori konten</span>
+                                    <span><strong>Kategori Lengkap</strong> - Akses semua kategori konten</span>
                                 </li>
                                 <li class="flex items-start gap-3 text-white/90">
                                     <svg class="w-5 h-5 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1403,7 +1088,7 @@
                 <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-6">Pusat Bantuan & FAQ</h2>
                 <p class="text-slate-600 text-lg mb-16">Temukan jawaban untuk semua pertanyaan Anda tentang RIA Prompt.</p>
             </div>
-            
+
             <div class="space-y-4" id="faqList">
                 <div class="faq-item bg-white rounded-2xl border border-slate-100 overflow-hidden transition-all hover:shadow-md">
                     <button class="w-full px-6 py-5 text-left flex justify-between items-center group">
@@ -1575,10 +1260,10 @@
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
                 const icon = button.querySelector('svg');
-                
+
                 // Toggle current item
                 const isHidden = content.classList.contains('hidden');
-                
+
                 // Close other items
                 document.querySelectorAll('.faq-item div').forEach(div => {
                     if (div !== content && div.classList.contains('pb-5')) {

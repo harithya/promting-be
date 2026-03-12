@@ -103,17 +103,14 @@
                 <div>
                     <h5 class="text-white font-bold mb-6">Produk</h5>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="/#templates" class="hover:text-primary transition-colors">Semua Template</a></li>
+                        <li><a href="/#templates" class="hover:text-primary transition-colors">Semua Kategori</a></li>
                         <li><a href="/#pricing" class="hover:text-primary transition-colors">Pricing</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Update Log</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h5 class="text-white font-bold mb-6">Perusahaan</h5>
+                    <h5 class="text-white font-bold mb-6">Tentang</h5>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="#" class="hover:text-primary transition-colors">Tentang Kami</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Kontak</a></li>
                         <li><a href="/#faq" class="hover:text-primary transition-colors">FAQ</a></li>
                         <li><a href="/privacy-policy" class="hover:text-primary transition-colors">Kebijakan Privasi</a>
                         </li>

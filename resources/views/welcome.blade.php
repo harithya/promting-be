@@ -139,7 +139,7 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Content Hub</p>
+                        <p class="text-sm text-slate-400 font-bold uppercase tracking-wider">Content Hub</p>
                         <p class="text-sm font-extrabold text-slate-800">8+ Kategori Lengkap</p>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Success Rate</p>
+                        <p class="text-sm text-slate-400 font-bold uppercase tracking-wider">Success Rate</p>
                         <p class="text-sm font-extrabold text-slate-800">99% Prompt Valid!</p>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Speed Optimized
+                        <p class="text-sm text-slate-400 font-bold uppercase tracking-wider">Speed Optimized
                         </p>
                         <p class="text-sm font-extrabold text-slate-800">Generate 2x Lebih Cepat</p>
                     </div>
@@ -912,178 +912,103 @@
             <p class="text-slate-600 max-w-2xl mx-auto text-lg">Ribuan creator telah membuktikan kemudahan membuat konten visual profesional dengan RIA Prompt.</p>
         </div>
 
-        <div class="swiper testimonialSwiper">
+        <!-- Swiper -->
+        <div class="swiper testimonialSwiper pb-12 h-64">
             <div class="swiper-wrapper">
                 <!-- Testimonial 1 -->
-                <div class="swiper-slide">
-                    <div class="bg-slate-50 p-5 rounded-2xl hover:shadow-lg transition-all group h-full flex flex-col">
-                        <div class="flex gap-1 text-amber-400 mb-3">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                @endfor
+                <div class="swiper-slide h-auto">
+                    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100 h-full flex flex-col hover:border-primary transition-all duration-300">
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-xs italic flex-grow mb-3">"Sangat terbantu! Hasil AI jadi lebih variatif dengan RIA Prompt."</p>
-                        <div class="flex items-center gap-2 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-8 h-8 rounded-full object-cover">
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 italic line-clamp-3">"Sangat membantu untuk membuat konten jualan. Gak perlu bingung lagi mau nulis apa buat caption dsn promosi."</p>
+                        <div class="mt-auto flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=250&h=250&auto=format&fit=crop" alt="Andi Pratama" class="w-full h-full object-cover">
+                            </div>
                             <div>
-                                <p class="font-bold text-slate-900 text-xs">Siska Putri</p>
-                                <p class="text-[10px] text-slate-500">Beauty Influencer</p>
+                                <h4 class="font-bold text-slate-900 ">Andi Pratama</h4>
+                                <p class="text-sm text-slate-500 font-medium">Digital Marketer</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="swiper-slide">
-                    <div class="bg-slate-50 p-5 rounded-2xl hover:shadow-lg transition-all group h-full flex flex-col">
-                        <div class="flex gap-1 text-amber-400 mb-3">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                @endfor
+                <div class="swiper-slide h-auto">
+                    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100 h-full flex flex-col hover:border-primary transition-all duration-300">
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-xs italic flex-grow mb-3">"Investasi terbaik! Prompt terstruktur, AI jadi akurat."</p>
-                        <div class="flex items-center gap-2 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-8 h-8 rounded-full object-cover">
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 italic line-clamp-3">"Fitur prompt generator-nya keren banget. Hasilnya presisi banget sesuai kebutuhan konten saya."</p>
+                        <div class="mt-auto flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=250&h=250&auto=format&fit=crop" alt="Siti Rahma" class="w-full h-full object-cover">
+                            </div>
                             <div>
-                                <p class="font-bold text-slate-900 text-xs">Budi Santoso</p>
-                                <p class="text-[10px] text-slate-500">Digital Marketer</p>
+                                <h4 class="font-bold text-slate-900 ">Siti Rahma</h4>
+                                <p class="text-sm text-slate-500 font-medium">Content Creator</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="swiper-slide">
-                    <div class="bg-slate-50 p-5 rounded-2xl hover:shadow-lg transition-all group h-full flex flex-col">
-                        <div class="flex gap-1 text-amber-400 mb-3">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                @endfor
+                <div class="swiper-slide h-auto">
+                    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100 h-full flex flex-col hover:border-primary transition-all duration-300">
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-xs italic flex-grow mb-3">"AI jadi keren dengan prompt yang tepat. Solusi UMKM!"</p>
-                        <div class="flex items-center gap-2 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-8 h-8 rounded-full object-cover">
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 italic line-clamp-3">"User interface-nya intuitif dan gampang dipake bahkan buat orang awam sekalipun."</p>
+                        <div class="mt-auto flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=250&h=250&auto=format&fit=crop" alt="Budi Santoso" class="w-full h-full object-cover">
+                            </div>
                             <div>
-                                <p class="font-bold text-slate-900 text-xs">Andini Rahma</p>
-                                <p class="text-[10px] text-slate-500">Fashion Brand Owner</p>
+                                <h4 class="font-bold text-slate-900 ">Budi Santoso</h4>
+                                <p class="text-sm text-slate-500 font-medium">Entrepreneur</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 4 -->
-                <div class="swiper-slide">
-                    <div class="bg-slate-50 p-5 rounded-2xl hover:shadow-lg transition-all group h-full flex flex-col">
-                        <div class="flex gap-1 text-amber-400 mb-3">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                @endfor
+                <div class="swiper-slide h-auto">
+                    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100 h-full flex flex-col hover:border-primary transition-all duration-300">
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-xs italic flex-grow mb-3">"Budget terbatas? RIA Prompt jadi penyelamat konten profesional!"</p>
-                        <div class="flex items-center gap-2 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-8 h-8 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900 text-xs">Lina Marlina</p>
-                                <p class="text-[10px] text-slate-500">Shop Owner</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 italic line-clamp-3">"Mantap pokoknya! Gak rugi beli lifetime access. Fiturnya terus diupdate juga."</p>
+                        <div class="mt-auto flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=250&h=250&auto=format&fit=crop" alt="Rina Wati" class="w-full h-full object-cover">
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 5 -->
-                <div class="swiper-slide">
-                    <div class="bg-slate-50 p-5 rounded-2xl hover:shadow-lg transition-all group h-full flex flex-col">
-                        <div class="flex gap-1 text-amber-400 mb-3">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                @endfor
-                        </div>
-                        <p class="text-slate-600 text-xs italic flex-grow mb-3">"Prompt engineering sendiri sering meleset. RIA Prompt lebih presisi!"</p>
-                        <div class="flex items-center gap-2 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-8 h-8 rounded-full object-cover">
                             <div>
-                                <p class="font-bold text-slate-900 text-xs">Hadi Wijaya</p>
-                                <p class="text-[10px] text-slate-500">Digital Strategist</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 6 -->
-                <div class="swiper-slide">
-                    <div class="bg-slate-50 p-5 rounded-2xl hover:shadow-lg transition-all group h-full flex flex-col">
-                        <div class="flex gap-1 text-amber-400 mb-3">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                @endfor
-                        </div>
-                        <p class="text-slate-600 text-xs italic flex-grow mb-3">"Game changer! Bikin konten edukasi jadi lebih mudah."</p>
-                        <div class="flex items-center gap-2 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-8 h-8 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900 text-xs">Maya Kusuma</p>
-                                <p class="text-[10px] text-slate-500">Content Creator</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 7 -->
-                <div class="swiper-slide">
-                    <div class="bg-slate-50 p-5 rounded-2xl hover:shadow-lg transition-all group h-full flex flex-col">
-                        <div class="flex gap-1 text-amber-400 mb-3">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                @endfor
-                        </div>
-                        <p class="text-slate-600 text-xs italic flex-grow mb-3">"Value luar biasa! Detail, tinggal copy paste dan edit."</p>
-                        <div class="flex items-center gap-2 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-8 h-8 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900 text-xs">Rizki Pratama</p>
-                                <p class="text-[10px] text-slate-500">Freelance Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 8 -->
-                <div class="swiper-slide">
-                    <div class="bg-slate-50 p-5 rounded-2xl hover:shadow-lg transition-all group h-full flex flex-col">
-                        <div class="flex gap-1 text-amber-400 mb-3">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                @endfor
-                        </div>
-                        <p class="text-slate-600 text-xs italic flex-grow mb-3">"Social media manager terbantu bikin konten konsisten!"</p>
-                        <div class="flex items-center gap-2 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-8 h-8 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900 text-xs">Dina Amelia</p>
-                                <p class="text-[10px] text-slate-500">Social Media Manager</p>
+                                <h4 class="font-bold text-slate-900 ">Rina Wati</h4>
+                                <p class="text-sm text-slate-500 font-medium">Social Media Manager</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Swiper Pagination -->
-            <div class="swiper-pagination mt-8"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination -bottom-2!"></div>
         </div>
     </div>
 </section>

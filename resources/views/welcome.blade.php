@@ -4,8 +4,37 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="https://unpkg.com/@lucide/web-icons"></script>
 <style>
-    .hero-grid {
-        mask-image: radial-gradient(circle at center, black, transparent 80%);
+    .hero-grid-container {
+        mask-image: radial-gradient(circle at center, black, transparent 85%);
+    }
+
+    .hero-grid-subtle {
+        background-image: 
+            linear-gradient(to right, rgba(39, 155, 132, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(39, 155, 132, 0.1) 1px, transparent 1px);
+        background-size: 80px 80px;
+    }
+
+    .hero-grid-primary {
+        background-image: 
+            linear-gradient(to right, rgba(39, 155, 132, 0.2) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(39, 155, 132, 0.2) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+
+    .hero-dots {
+        background-image: radial-gradient(rgba(39, 155, 132, 0.3) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+
+    @keyframes grid-move {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(10px, 10px); }
+        100% { transform: translate(0, 0); }
+    }
+
+    .animate-grid {
+        animation: grid-move 20s ease-in-out infinite;
     }
 
     @keyframes float-particle {
@@ -33,9 +62,11 @@
 @section('content')
 <!-- Hero Section -->
 <section id="home" class="pt-32 pb-16 sm:pt-48 sm:pb-32 overflow-hidden relative">
-    <!-- Background Linear Grid Pattern -->
-    <div
-        class="absolute inset-0 opacity-[0.05] hero-grid -z-10 bg-[linear-gradient(to_right,#279b84_1px,transparent_1px),linear-gradient(to_bottom,#279b84_1px,transparent_1px)] bg-size-[40px_40px]">
+    <!-- Enhanced Background Grid Layers -->
+    <div class="absolute inset-0 -z-10 overflow-hidden hero-grid-container px-4">
+        <div class="absolute inset-[-100px] hero-grid-subtle opacity-50"></div>
+        <div class="absolute inset-[-100px] hero-grid-primary opacity-70 animate-grid"></div>
+        <div class="absolute inset-[-100px] hero-dots opacity-40"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">

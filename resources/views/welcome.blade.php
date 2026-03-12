@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://unpkg.com/@lucide/web-icons"></script>
     <style>
         :root {
@@ -636,6 +635,32 @@
                         <img src="/images/result/motivasi.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
                     </div>
                 </div>
+                <!-- Motivasi -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/contoh1.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/contoh2.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/contoh3.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/contoh4.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class=" overflow-hidden">
+                        <img src="/images/result/contoh5.png" alt="Contoh Hasil Generate" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -825,106 +850,310 @@
                 <p class="text-slate-600 max-w-2xl mx-auto text-lg">Ribuan creator telah membuktikan kemudahan membuat konten visual profesional dengan RIA Prompt.</p>
             </div>
 
-            <div class="testimonial-slider px-8">
-                <!-- Testimonial 1 -->
-                <div class="px-4">
-                    <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
-                        <div class="flex gap-1 text-amber-400 mb-6">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                @endfor
-                        </div>
-                        <p class="text-slate-600 mb-8 italic">"Sangat terbantu! Dulu harus bayar freelancer tiap mau posting promo, sekarang cukup pakai RIA Prompt dan AI, hasilnya jauh lebih variatif dan cepet banget."</p>
-                        <div class="flex items-center gap-4">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900">Siska Putri</p>
-                                <p class="text-xs text-slate-500">Beauty Influencer</p>
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper pb-12">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Sangat terbantu! Dulu harus bayar freelancer tiap mau posting promo, sekarang cukup pakai RIA Prompt dan AI, hasilnya jauh lebih variatif dan cepet banget."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Siska Putri</p>
+                                    <p class="text-xs text-slate-500">Beauty Influencer</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Testimonial 2 -->
-                <div class="px-4">
-                    <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
-                        <div class="flex gap-1 text-amber-400 mb-6">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                @endfor
-                        </div>
-                        <p class="text-slate-700 mb-8 italic font-medium">"Investasi 99rb terbaik tahun ini. Prompt-nya beneran terstruktur, jadi AI nggak ngawur kasih hasilnya. Udah kayak punya art director pribadi di browser!"</p>
-                        <div class="flex items-center gap-4">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900">Budi Santoso</p>
-                                <p class="text-xs text-slate-500">Digital Marketer</p>
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-700 mb-8 italic font-medium">"Investasi 99rb terbaik tahun ini. Prompt-nya beneran terstruktur, jadi AI nggak ngawur kasih hasilnya. Udah kayak punya art director pribadi di browser!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Budi Santoso</p>
+                                    <p class="text-xs text-slate-500">Digital Marketer</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Testimonial 3 -->
-                <div class="px-4">
-                    <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
-                        <div class="flex gap-1 text-amber-400 mb-6">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                @endfor
-                        </div>
-                        <p class="text-slate-600 mb-8 italic">"Nggak nyangka AI bisa se-keren ini kalau dikasih prompt yang bener. RIA Prompt beneran jadi solusi buat UMKM kayak saya yang budget-nya terbatas buat desain."</p>
-                        <div class="flex items-center gap-4">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900">Andini Rahma</p>
-                                <p class="text-xs text-slate-500">Owner Fashion Local Brand</p>
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Nggak nyangka AI bisa se-keren ini kalau dikasih prompt yang bener. RIA Prompt beneran jadi solusi buat UMKM kayak saya yang budget-nya terbatas buat desain."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Andini Rahma</p>
+                                    <p class="text-xs text-slate-500">Owner Fashion Local Brand</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Testimonial 4 -->
-                <div class="px-4">
-                    <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
-                        <div class="flex gap-1 text-amber-400 mb-6">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                @endfor
-                        </div>
-                        <p class="text-slate-600 mb-8 italic">"Sebagai UMKM, budget marketing saya sangat terbatas. RIA Prompt beneran jadi penyelamat buat bikin konten katalog produk yang profesional!"</p>
-                        <div class="flex items-center gap-4">
-                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900">Lina Marlina</p>
-                                <p class="text-xs text-slate-500">Shop Owner</p>
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Sebagai UMKM, budget marketing saya sangat terbatas. RIA Prompt beneran jadi penyelamat buat bikin konten katalog produk yang profesional!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Lina Marlina</p>
+                                    <p class="text-xs text-slate-500">Shop Owner</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Testimonial 5 -->
-                <div class="px-4">
-                    <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
-                        <div class="flex gap-1 text-amber-400 mb-6">
-                            @for ($i = 0; $i < 5; $i++)
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                @endfor
+                    <!-- Testimonial 5 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Udah coba berbagai prompt engineering sendiri tapi hasilnya sering meleset. Begitu pakai RIA Prompt, baru deh kerasa bedanya. Lebih presisi!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Hadi Wijaya</p>
+                                    <p class="text-xs text-slate-500">Digital Strategist</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-slate-600 mb-8 italic">"Udah coba berbagai prompt engineering sendiri tapi hasilnya sering meleset. Begitu pakai RIA Prompt, baru deh kerasa bedanya. Lebih presisi!"</p>
-                        <div class="flex items-center gap-4">
-                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
-                            <div>
-                                <p class="font-bold text-slate-900">Hadi Wijaya</p>
-                                <p class="text-xs text-slate-500">Digital Strategist</p>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Game changer buat content creator! Sekarang bisa bikin konten edukasi yang menarik tanpa harus pusing mikirin desain. Fokus ke konten aja!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Maya Kusuma</p>
+                                    <p class="text-xs text-slate-500">Content Creator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 7 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Untuk harga segini, value yang didapat luar biasa. Prompt-nya detail banget, tinggal copy paste dan edit dikit sesuai kebutuhan. Recommended!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Rizki Pratama</p>
+                                    <p class="text-xs text-slate-500">Freelance Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 8 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Sebagai social media manager, RIA Prompt sangat membantu saya bikin konten yang konsisten dan berkualitas untuk klien. Efisiensi waktu meningkat drastis!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Dina Amelia</p>
+                                    <p class="text-xs text-slate-500">Social Media Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 9 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Awalnya skeptis, tapi setelah coba ternyata hasilnya bagus banget! Prompt-nya mudah dipahami dan bisa disesuaikan dengan brand identity kita."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Arif Setiawan</p>
+                                    <p class="text-xs text-slate-500">Startup Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 10 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Paling suka fitur customizable tone-nya. Bisa disesuaikan sama target audience kita. Dari formal sampe casual, semua ada templatenya!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Fitri Handayani</p>
+                                    <p class="text-xs text-slate-500">Brand Consultant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 11 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Hemat waktu dan biaya! Dulu butuh 2-3 hari buat bikin konten sebulan, sekarang cuma butuh beberapa jam. ROI-nya jelas banget!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Eko Prasetyo</p>
+                                    <p class="text-xs text-slate-500">E-commerce Owner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 12 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Cocok banget buat yang baru mulai belajar AI. Prompt-nya terstruktur jadi gampang dipahami dan dimodifikasi sesuai kebutuhan."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Nadia Putri</p>
+                                    <p class="text-xs text-slate-500">Graphic Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 13 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Kualitas konten yang dihasilkan konsisten dan profesional. Klien-klien saya juga impressed dengan hasil desain yang saya buat pakai RIA Prompt!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Fajar Ramadhan</p>
+                                    <p class="text-xs text-slate-500">Creative Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 14 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Support untuk berbagai AI provider bikin fleksibel banget. Bisa pakai ChatGPT, Gemini, atau AI lainnya sesuai budget dan kebutuhan."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Sari Wulandari</p>
+                                    <p class="text-xs text-slate-500">Marketing Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 15 -->
+                    <div class="swiper-slide">
+                        <div class="bg-slate-50 p-8 rounded-4xl hover:shadow-xl transition-all group h-full">
+                            <div class="flex gap-1 text-amber-400 mb-6">
+                                @for ($i = 0; $i < 5; $i++)
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    @endfor
+                            </div>
+                            <p class="text-slate-600 mb-8 italic">"Best investment ever! Dengan harga 99rb dapat akses lifetime, ini literally steal deal. Update konten juga rutin, jadi makin worth it!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-bold text-slate-900">Dimas Pradipta</p>
+                                    <p class="text-xs text-slate-500">Entrepreneur</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -1239,7 +1468,33 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        // Initialize Swiper for Testimonials
+        const testimonialSwiper = new Swiper('.testimonialSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
         // Smooth scroll for nav links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {

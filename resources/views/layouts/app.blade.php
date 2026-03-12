@@ -93,7 +93,7 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 animate-in slide-in-from-top duration-300">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100">
             <div class="px-4 pt-2 pb-6 space-y-1">
                 <a href="#home" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Home</a>
                 <a href="#templates" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Templates</a>
@@ -101,7 +101,7 @@
                 <a href="#pricing" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Pricing</a>
                 <a href="#faq" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">FAQ</a>
                 <div class="pt-4 border-t border-slate-100">
-                    <a href="/login" class="block w-full text-center bg-primary text-white px-5 py-3 rounded-full text-sm font-bold hover:bg-primary-dark transition-all">Login Sekarang</a>
+                    <a href="/login" class="block w-full text-center bg-primary text-white px-5 py-3 rounded-full text-sm font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25">Login Sekarang</a>
                 </div>
             </div>
         </div>
@@ -116,29 +116,30 @@
             const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
             function toggleMenu() {
-                const isOpen = !menu.classList.contains('hidden');
-                if (isOpen) {
-                    menu.classList.add('hidden');
-                    hamburgerIcon.classList.remove('hidden');
-                    closeIcon.classList.add('hidden');
-                    document.body.style.overflow = 'auto';
-                } else {
+                const isHidden = menu.classList.contains('hidden');
+                if (isHidden) {
                     menu.classList.remove('hidden');
                     hamburgerIcon.classList.add('hidden');
                     closeIcon.classList.remove('hidden');
                     document.body.style.overflow = 'hidden';
+                } else {
+                    menu.classList.add('hidden');
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
                 }
             }
 
             if(toggleBtn) {
-                toggleBtn.addEventListener('click', toggleMenu);
+                toggleBtn.addEventListener('click', e => {
+                    e.preventDefault();
+                    toggleMenu();
+                });
             }
 
             mobileNavLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    if (!menu.classList.contains('hidden')) {
-                        toggleMenu();
-                    }
+                    toggleMenu();
                 });
             });
         });

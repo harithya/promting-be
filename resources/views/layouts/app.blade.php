@@ -94,7 +94,6 @@
                 <div class="col-span-1 md:col-span-1">
                     <div class="flex items-center gap-3 mb-6">
                         <img src="{{ asset('images/logo.png') }}" alt="RIA Prompt Logo" class="h-8 w-auto">
-                        <span class="text-xl font-extrabold tracking-tight text-white">RIA Prompt</span>
                     </div>
                     <p class="text-sm leading-relaxed mb-6">#1 AI Content Generator. Kami mempermudah pembuatan konten
                         visual profesional melalui prompt terstruktur yang mudah digunakan dan compatible dengan

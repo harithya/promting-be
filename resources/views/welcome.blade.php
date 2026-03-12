@@ -925,10 +925,10 @@
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4 italic line-clamp-3">"Sangat membantu untuk membuat konten jualan. Gak perlu bingung lagi mau nulis apa buat caption dsn promosi."</p>
+                        <p class="text-slate-600 text-lg leading-relaxed mb-4 italic line-clamp-3">"Sangat membantu untuk membuat konten jualan. Gak perlu bingung lagi mau nulis apa buat caption dsn promosi."</p>
                         <div class="mt-auto flex items-center gap-3">
-                            <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=250&h=250&auto=format&fit=crop" alt="Andi Pratama" class="w-full h-full object-cover">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=450&h=450&auto=format&fit=crop" alt="Andi Pratama" class="w-full h-full object-cover">
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 ">Andi Pratama</h4>
@@ -948,10 +948,10 @@
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4 italic line-clamp-3">"Fitur prompt generator-nya keren banget. Hasilnya presisi banget sesuai kebutuhan konten saya."</p>
+                        <p class="text-slate-600 text-lg leading-relaxed mb-4 italic line-clamp-3">"Fitur prompt generator-nya keren banget. Hasilnya presisi banget sesuai kebutuhan konten saya."</p>
                         <div class="mt-auto flex items-center gap-3">
-                            <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=250&h=250&auto=format&fit=crop" alt="Siti Rahma" class="w-full h-full object-cover">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=450&h=450&auto=format&fit=crop" alt="Siti Rahma" class="w-full h-full object-cover">
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 ">Siti Rahma</h4>
@@ -971,10 +971,10 @@
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4 italic line-clamp-3">"User interface-nya intuitif dan gampang dipake bahkan buat orang awam sekalipun."</p>
+                        <p class="text-slate-600 text-lg leading-relaxed mb-4 italic line-clamp-3">"User interface-nya intuitif dan gampang dipake bahkan buat orang awam sekalipun."</p>
                         <div class="mt-auto flex items-center gap-3">
-                            <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=250&h=250&auto=format&fit=crop" alt="Budi Santoso" class="w-full h-full object-cover">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=450&h=450&auto=format&fit=crop" alt="Budi Santoso" class="w-full h-full object-cover">
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 ">Budi Santoso</h4>
@@ -994,10 +994,10 @@
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4 italic line-clamp-3">"Mantap pokoknya! Gak rugi beli lifetime access. Fiturnya terus diupdate juga."</p>
+                        <p class="text-slate-600 text-lg leading-relaxed mb-4 italic line-clamp-3">"Mantap pokoknya! Gak rugi beli lifetime access. Fiturnya terus diupdate juga."</p>
                         <div class="mt-auto flex items-center gap-3">
-                            <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=250&h=250&auto=format&fit=crop" alt="Rina Wati" class="w-full h-full object-cover">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=450&h=450&auto=format&fit=crop" alt="Rina Wati" class="w-full h-full object-cover">
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 ">Rina Wati</h4>

@@ -2,6 +2,7 @@
 
 @section('styles')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 <script src="https://unpkg.com/@lucide/web-icons"></script>
 <style>
     .hero-grid-container {
@@ -89,6 +90,19 @@
         background: var(--primary) !important;
         width: 32px !important;
         border-radius: 6px !important;
+    }
+
+    /* Benefit Cards - Premium Design */
+    .benefit-card {
+        position: relative;
+        background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(248,250,252,0.95) 100%);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(255,255,255,0.8);
+        box-shadow: 0 4px 24px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.03), inset 0 1px 0 rgba(255,255,255,0.8);
+    }
+    .benefit-card:hover {
+        box-shadow: 0 30px 60px -15px rgba(39,155,132,0.3), 0 0 0 2px rgba(39,155,132,0.15), inset 0 1px 0 rgba(255,255,255,1);
+        border-color: rgba(39,155,132,0.2);
     }
 </style>
 @endsection
@@ -616,137 +630,153 @@
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- Promo -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/promo.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/promo.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/promo.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Promo 2 -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/p-1.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/p-1.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/p-1.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Edukasi -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/edukasi.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/edukasi.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/edukasi.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Edukasi 2 -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/edukasi2.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/edukasi2.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/edukasi2.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Edukasi 3 -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/edukasi3.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/edukasi3.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/edukasi3.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Event -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/event.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/event.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/event.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Event 2 -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/event2.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/event2.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/event2.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Hiburan -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/hiburan.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/hiburan.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/hiburan.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Lifestyle -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/lifestyle.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/lifestyle.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/lifestyle.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Motivasi -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/p-3.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            <a href="/images/result/p-3.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/p-3.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
-            <!-- Motivasi -->
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/contoh1.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            </a>
+
+            <a href="/images/result/contoh1.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/contoh1.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/contoh2.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            </a>
+            <a href="/images/result/contoh2.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/contoh2.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/contoh3.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            </a>
+            <a href="/images/result/contoh3.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/contoh3.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/p-2.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            </a>
+            <a href="/images/result/p-2.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/p-2.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/contoh5.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            </a>
+            <a href="/images/result/contoh5.png" class="glightbox" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/contoh5.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
-            <div
-                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 md:hidden ">
-                <div class=" overflow-hidden">
-                    <img src="/images/result/contoh4.png" alt="Contoh Hasil Generate"
-                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+            </a>
+            <a href="/images/result/contoh4.png" class="glightbox md:hidden" data-gallery="hasil-generate">
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img src="/images/result/contoh4.png" alt="Contoh Hasil Generate"
+                            class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
@@ -967,72 +997,77 @@
 </section>
 
 <!-- Benefit Section -->
-<section class="py-24 bg-slate-50/50 relative overflow-hidden">
-    <!-- Subtle background element -->
-    <div class="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-primary/5 to-transparent -z-10"></div>
+<section class="py-28 relative overflow-hidden">
+    <!-- Dynamic gradient background -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-slate-50 via-primary/5 to-indigo-50/80"></div>
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[150px] -z-10 animate-pulse"></div>
+    <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-indigo-400/20 rounded-full blur-[120px] -z-10 animate-pulse" style="animation-delay: 1s;"></div>
+    <!-- Grid pattern overlay -->
+    <div class="absolute inset-0 -z-10 opacity-30" style="background-image: radial-gradient(rgba(39,155,132,0.15) 1px, transparent 1px); background-size: 32px 32px;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
-            <span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Kenapa RIA
-                Prompt?</span>
-            <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+            <span class="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-white/80 backdrop-blur-sm text-primary font-bold tracking-widest uppercase text-xs mb-6 border border-primary/20 shadow-sm">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                Kenapa RIA Prompt?
+            </span>
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
                 Bukan Sekadar Prompt, Tapi <span class="text-gradient italic">Senjata Rahasia</span> Kreator Modern
             </h2>
-            <p class="text-slate-600 max-w-2xl mx-auto text-lg">Hentikan kebiasaan menebak-nebak. Mulailah
-                membangun konten yang beneran <span class="font-bold text-slate-900 text-sm">menghasilkan</span> dengan
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg sm:text-xl">Hentikan kebiasaan menebak-nebak. Mulailah
+                membangun konten yang beneran <span class="font-bold text-slate-900">menghasilkan</span> dengan
                 struktur yang teruji.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Benefit 1 - Berhenti Menebak -->
-            <div class="group relative overflow-hidden p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-200/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(39,155,132,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <span class="absolute top-5 right-5 text-6xl font-black text-primary/5 group-hover:text-primary/10 transition-colors">01</span>
+            <div class="group benefit-card rounded-3xl p-8 hover:-translate-y-3 transition-all duration-500">
+                <span class="absolute top-6 right-6 text-8xl font-black text-amber-500/10 group-hover:text-amber-500/15 transition-opacity">01</span>
                 <div class="relative">
-                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-500">⚡</div>
-                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold mb-4">
-                        ⚡ 2 jam → Detik
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Berhenti Menebak</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Jangan buang waktu cuma nyari 1 prompt. Pilih kategori, <span class="text-primary font-bold">beres dalam detik</span>.</p>
+                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 text-amber-800 text-sm font-bold mb-5 border border-amber-400/20">
+                        2 jam → Detik
+                    </span>
+                    <h3 class="text-xl font-extrabold text-slate-900 mb-3">Berhenti Menebak</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Jangan buang waktu cuma nyari 1 prompt. Pilih kategori, <span class="text-primary font-extrabold">beres dalam detik</span>.</p>
                 </div>
             </div>
 
             <!-- Benefit 2 - Struktur Level Pro -->
-            <div class="group relative overflow-hidden p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-200/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(39,155,132,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <span class="absolute top-5 right-5 text-6xl font-black text-primary/5 group-hover:text-primary/10 transition-colors">02</span>
+            <div class="group benefit-card rounded-3xl p-8 hover:-translate-y-3 transition-all duration-500">
+                <span class="absolute top-6 right-6 text-8xl font-black text-emerald-500/10 group-hover:text-emerald-500/15 transition-opacity">02</span>
                 <div class="relative">
-                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-500">✅</div>
-                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold mb-4">
-                        ✓ Logic Teruji
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Struktur Level Pro</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Prompt dirancang dengan <span class="text-primary font-bold">logic terstruktur</span>. Hasil AI akurat, bukan asal-asalan.</p>
+                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/10 text-emerald-800 text-sm font-bold mb-5 border border-emerald-400/20">
+                        Logic Teruji
+                    </span>
+                    <h3 class="text-xl font-extrabold text-slate-900 mb-3">Struktur Level Pro</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Prompt dirancang dengan <span class="text-primary font-extrabold">logic terstruktur</span>. Hasil AI akurat, bukan asal-asalan.</p>
                 </div>
             </div>
 
             <!-- Benefit 3 - Inspirasi Tanpa Batas -->
-            <div class="group relative overflow-hidden p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-200/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(39,155,132,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <span class="absolute top-5 right-5 text-6xl font-black text-primary/5 group-hover:text-primary/10 transition-colors">03</span>
+            <div class="group benefit-card rounded-3xl p-8 hover:-translate-y-3 transition-all duration-500">
+                <span class="absolute top-6 right-6 text-8xl font-black text-violet-500/10 group-hover:text-violet-500/15 transition-opacity">03</span>
                 <div class="relative">
-                    <div class="w-16 h-16 bg-violet-100 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-500">✨</div>
-                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-bold mb-4">
-                        ✨ 500+ Contoh
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Inspirasi Tanpa Batas</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Buntu ide? Ratusan contoh nyata siap kamu <span class="text-primary font-bold">modifikasi</span> dalam hitungan detik.</p>
+                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-violet-500/10 text-violet-800 text-sm font-bold mb-5 border border-violet-400/20">
+                        500+ Contoh
+                    </span>
+                    <h3 class="text-xl font-extrabold text-slate-900 mb-3">Inspirasi Tanpa Batas</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Buntu ide? Ratusan contoh nyata siap kamu <span class="text-primary font-extrabold">modifikasi</span> dalam hitungan detik.</p>
                 </div>
             </div>
 
             <!-- Benefit 4 - Satu Untuk Semua -->
-            <div class="group relative overflow-hidden p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-200/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(39,155,132,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <span class="absolute top-5 right-5 text-6xl font-black text-primary/5 group-hover:text-primary/10 transition-colors">04</span>
+            <div class="group benefit-card rounded-3xl p-8 hover:-translate-y-3 transition-all duration-500">
+                <span class="absolute top-6 right-6 text-8xl font-black text-orange-500/10 group-hover:text-orange-500/15 transition-opacity">04</span>
                 <div class="relative">
-                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-500">🌐</div>
-                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-bold mb-4">
-                        🌐 Universal
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Satu Untuk Semua</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">ChatGPT, Gemini, Claude, Midjourney. <span class="text-primary font-bold">Universal access</span> tanpa batas platform.</p>
+                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-500/10 text-orange-800 text-sm font-bold mb-5 border border-orange-400/20">
+                        Universal
+                    </span>
+                    <h3 class="text-xl font-extrabold text-slate-900 mb-3">Satu Untuk Semua</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">ChatGPT, Gemini, Claude, Midjourney. <span class="text-primary font-extrabold">Universal access</span> tanpa batas platform.</p>
                 </div>
             </div>
         </div>
@@ -1346,7 +1381,7 @@
                     </button>
 
                     <p class="text-center text-white/60 text-xs mt-4">
-                        💳 Pembayaran aman & terpercaya • 🔒 Garansi 7 hari uang kembali
+                        💳 Pembayaran aman & terpercaya • 🔒 Akses lifetime
                     </p>
                     <p class="text-center text-amber-200/90 text-xs mt-2 font-medium">
                         Harga dapat naik sewaktu-waktu. Amankan harga promo sekarang!
@@ -1548,8 +1583,7 @@
                     </svg>
                 </button>
                 <div class="px-6 pb-5 text-slate-600 text-sm leading-relaxed hidden">
-                    Ya, kami memberikan jaminan kepuasan. Jika Anda merasa layanan kami tidak sesuai harapan dalam 7
-                    hari pertama, Anda dapat mengajukan refund penuh.
+                    RIA Prompt tidak menyediakan refund atau pengembalian dana. Produk merupakan akses digital lifetime. Silakan pelajari informasi produk sebelum pembelian. Untuk kendala teknis atau pertanyaan, hubungi tim kami.
                 </div>
             </div>
         </div>
@@ -1620,7 +1654,18 @@
 
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
+    // Initialize GLightbox for image gallery
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true,
+        });
+    });
+
     // Initialize Swiper for Testimonials
     const testimonialSwiper = new Swiper('.testimonialSwiper', {
         slidesPerView: 1,

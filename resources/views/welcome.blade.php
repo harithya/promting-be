@@ -1594,7 +1594,7 @@
 <div id="leadModal" class="fixed inset-0 z-50 overflow-y-auto {{ $errors->any() ? '' : 'hidden' }}" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
         <div class="fixed inset-0 bg-slate-900/60 transition-opacity" onclick="closeLeadModal()"></div>
-        <div class="relative inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-2xl rounded-2xl">
+        <div class="relative inline-block w-full max-w-lg p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-2xl rounded-2xl">
             <div class="flex items-center justify-between mb-6">
                 <h3 id="modal-title" class="text-xl font-bold text-slate-900">Dapatkan Akses Lifetime</h3>
                 <button type="button" onclick="closeLeadModal()" class="p-2 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition-colors">
@@ -1642,6 +1642,30 @@
                     <p class="mt-1 text-sm text-red-500">{{ $message }}</p>
                     @enderror
                 </div>
+
+                <!-- Payment Methods Section -->
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-3">Pilih Metode Pembayaran</label>
+                    <div class="space-y-3 max-h-64 overflow-y-auto">
+                        @if(isset($payments) && $payments->successful())
+                            @foreach($payments->json('data') as $payment)
+                                <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:border-primary hover:bg-primary/5 cursor-pointer transition-all">
+                                    <input type="radio" name="payment_method" value="{{ $payment['code'] }}" class="w-4 h-4 text-primary focus:ring-primary" required>
+                                    <img src="{{ $payment['icon_url'] }}" alt="{{ $payment['name'] }}" class="w-12 h-12 object-contain">
+                                    <div class="flex-1">
+                                        <p class="text-sm font-medium text-slate-900">{{ $payment['name'] }}</p>
+                                        @if(isset($payment['fee_merchant']))
+                                        <p class="text-xs text-slate-500">Fee: {{ $payment['fee_merchant']['flat'] > 0 ? 'Rp ' . number_format($payment['fee_merchant']['flat'], 0, ',', '.') : 'Gratis' }}</p>
+                                        @endif
+                                    </div>
+                                </label>
+                            @endforeach
+                        @else
+                            <p class="text-sm text-slate-500 text-center py-4">Metode pembayaran tidak tersedia</p>
+                        @endif
+                    </div>
+                </div>
+
                 <button type="submit"
                     class="w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-all shadow-lg shadow-primary/25">
                     Lanjut ke Pembayaran

@@ -20,6 +20,10 @@ return new class extends Migration
             $table->string('payment_channel');
             $table->string('reference');
             $table->string('checkout_url');
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->integer('user_id')->nullable();
             $table->timestamps();
         });
     }

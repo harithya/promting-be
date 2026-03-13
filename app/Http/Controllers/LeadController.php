@@ -4,9 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class LeadController extends Controller
 {
+    public function index()
+    {
+        $payments = Http::withHeaders([
+            'Authorization' => 'Bearer ' . env('TRIPAY_API_KEY')
+        ])->get(env('TRIPAY_URL') . '/merchant/payment-channel');
+
+        return view('welcome', [
+            'payments' => $payments
+        ]);
+    }
     /**
      * Store lead data - validation only, no backend process.
      */
@@ -16,14 +27,10 @@ class LeadController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email'],
             'phone' => ['required', 'string', 'max:20'],
-        ], [
-            'name.required' => 'Nama lengkap wajib diisi.',
-            'name.max' => 'Nama maksimal 255 karakter.',
-            'email.required' => 'Email wajib diisi.',
-            'email.email' => 'Format email tidak valid.',
-            'phone.required' => 'Nomor HP wajib diisi.',
-            'phone.max' => 'Nomor HP maksimal 20 karakter.',
         ]);
+
+        // INTERGRASI TRIPAY
+
 
         session([
             'lead_name' => $validated['name'],

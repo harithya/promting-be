@@ -56,6 +56,30 @@
     .animate-float-particle {
         animation: float-particle 8s ease-in-out infinite;
     }
+
+    /* Testimonial - Equal height cards */
+    .testimonialSwiper .swiper-slide {
+        height: 100%;
+    }
+
+    /* Testimonial Swiper Pagination - Visible & Styled */
+    .testimonialSwiper .swiper-pagination {
+        position: relative !important;
+        margin-top: 2rem !important;
+        bottom: auto !important;
+    }
+    .testimonialSwiper .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+        background: #cbd5e1 !important;
+        opacity: 1 !important;
+        transition: all 0.3s ease;
+    }
+    .testimonialSwiper .swiper-pagination-bullet-active {
+        background: var(--primary) !important;
+        width: 32px !important;
+        border-radius: 6px !important;
+    }
 </style>
 @endsection
 
@@ -104,9 +128,9 @@
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                 </a>
-                <a href="#templates"
+                <a href="#hasil-generate"
                     class="w-full sm:w-auto bg-white border-2 border-slate-100 text-slate-700 px-8 py-4 rounded-full text-lg font-bold hover:border-primary hover:text-primary transition-all active:scale-95 flex items-center justify-center gap-2">
-                    Lihat Kategori
+                    Lihat Hasil Generate
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -570,7 +594,7 @@
 </section>
 
 <!-- Example Results Section -->
-<section class="py-24 bg-gradient-to-br from-slate-50 to-white">
+<section id="hasil-generate" class="py-24 bg-gradient-to-br from-slate-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
             <span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Hasil Nyata</span>
@@ -775,6 +799,45 @@
                             </p>
                         </div>
                     </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-1">
+                            <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-200">Revisi = Biaya Tambah</p>
+                            <p class="text-sm text-slate-400">Setiap revisi sering dikenakan biaya ekstra.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-1">
+                            <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-200">Tidak Scalable</p>
+                            <p class="text-sm text-slate-400">Butuh hire banyak desainer untuk volume konten besar.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-1">
+                            <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-200">Jam Kerja Terbatas</p>
+                            <p class="text-sm text-slate-400">Desainer punya jam kerja, deadline bisa molor.</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
@@ -836,6 +899,45 @@
                                 Anda.</p>
                         </div>
                     </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-1">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Revisi Unlimited</p>
+                            <p class="text-sm text-slate-300">Edit sendiri kapan saja, tanpa biaya tambahan.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-1">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Scale Tanpa Batas</p>
+                            <p class="text-sm text-slate-300">Buat puluhan bahkan ratusan konten dalam sehari.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-1">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Tersedia 24/7</p>
+                            <p class="text-sm text-slate-300">Buka kapan saja, bahkan tengah malam. Tanpa antre.</p>
+                        </div>
+                    </li>
                 </ul>
                 <div class="mt-10">
                     <div
@@ -864,67 +966,57 @@
                 struktur yang teruji.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Benefit 1 -->
-            <div
-                class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-primary/20 hover:shadow-[0_20px_50px_rgba(39,155,132,0.1)] transition-all duration-500 hover:-translate-y-2">
-                <div
-                    class="w-14 h-14 bg-primary-light text-primary rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-500">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Benefit 1 - Berhenti Menebak -->
+            <div class="group relative overflow-hidden p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-200/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(39,155,132,0.15)] transition-all duration-500 hover:-translate-y-2">
+                <span class="absolute top-5 right-5 text-6xl font-black text-primary/5 group-hover:text-primary/10 transition-colors">01</span>
+                <div class="relative">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-500">⚡</div>
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold mb-4">
+                        ⚡ 2 jam → Detik
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Berhenti Menebak</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Jangan buang waktu cuma nyari 1 prompt. Pilih kategori, <span class="text-primary font-bold">beres dalam detik</span>.</p>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-4">Berhenti Menebak</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Jangan buang waktu 2 jam cuma buat nyari 1
-                    prompt. Pilih kategori, beresin dalam <span class="text-primary font-bold">detik</span>.</p>
             </div>
 
-            <!-- Benefit 2 -->
-            <div
-                class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-primary/20 hover:shadow-[0_20px_50px_rgba(39,155,132,0.1)] transition-all duration-500 hover:-translate-y-2">
-                <div
-                    class="w-14 h-14 bg-primary-light text-primary rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-500">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                    </svg>
+            <!-- Benefit 2 - Struktur Level Pro -->
+            <div class="group relative overflow-hidden p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-200/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(39,155,132,0.15)] transition-all duration-500 hover:-translate-y-2">
+                <span class="absolute top-5 right-5 text-6xl font-black text-primary/5 group-hover:text-primary/10 transition-colors">02</span>
+                <div class="relative">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-500">✅</div>
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold mb-4">
+                        ✓ Logic Teruji
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Struktur Level Pro</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Prompt dirancang dengan <span class="text-primary font-bold">logic terstruktur</span>. Hasil AI akurat, bukan asal-asalan.</p>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-4">Struktur Level Pro</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Prompt kami dirancang dengan <span
-                        class="text-primary font-bold">Logic Terstruktur</span>. Hasil AI jadi lebih akurat, bukan
-                    asal-asalan.</p>
             </div>
 
-            <!-- Benefit 3 -->
-            <div
-                class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-primary/20 hover:shadow-[0_20px_50px_rgba(39,155,132,0.1)] transition-all duration-500 hover:-translate-y-2">
-                <div
-                    class="w-14 h-14 bg-primary-light text-primary rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-500">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                    </svg>
+            <!-- Benefit 3 - Inspirasi Tanpa Batas -->
+            <div class="group relative overflow-hidden p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-200/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(39,155,132,0.15)] transition-all duration-500 hover:-translate-y-2">
+                <span class="absolute top-5 right-5 text-6xl font-black text-primary/5 group-hover:text-primary/10 transition-colors">03</span>
+                <div class="relative">
+                    <div class="w-16 h-16 bg-violet-100 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-500">✨</div>
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-bold mb-4">
+                        ✨ 500+ Contoh
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Inspirasi Tanpa Batas</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Buntu ide? Ratusan contoh nyata siap kamu <span class="text-primary font-bold">modifikasi</span> dalam hitungan detik.</p>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-4">Inspirasi Tanpa Batas</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Buntu ide? Ada ratusan contoh nyata yang siap
-                    kamu <span class="text-primary font-bold">Modifikasi</span> dalam hitungan detik.</p>
             </div>
 
-            <!-- Benefit 4 -->
-            <div
-                class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-primary/20 hover:shadow-[0_20px_50px_rgba(39,155,132,0.1)] transition-all duration-500 hover:-translate-y-2">
-                <div
-                    class="w-14 h-14 bg-primary-light text-primary rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-500">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                    </svg>
+            <!-- Benefit 4 - Satu Untuk Semua -->
+            <div class="group relative overflow-hidden p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-200/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(39,155,132,0.15)] transition-all duration-500 hover:-translate-y-2">
+                <span class="absolute top-5 right-5 text-6xl font-black text-primary/5 group-hover:text-primary/10 transition-colors">04</span>
+                <div class="relative">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-500">🌐</div>
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-bold mb-4">
+                        🌐 Universal
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Satu Untuk Semua</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">ChatGPT, Gemini, Claude, Midjourney. <span class="text-primary font-bold">Universal access</span> tanpa batas platform.</p>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-4">Satu Untuk Semua</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Bisa dipake di ChatGPT, Gemini, Claude, ampe
-                    Midjourney. <span class="text-primary font-bold">Universal access</span> tanpa batas platform.
-                </p>
             </div>
         </div>
     </div>
@@ -935,111 +1027,182 @@
 
 
 <!-- Testimonials Section -->
-<section class="py-16 bg-white overflow-hidden">
+<section class="py-20 relative overflow-hidden bg-slate-50">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Testimonials</span>
+        <div class="text-center mb-14">
+            <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-6 border border-primary/20">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                Testimonials
+            </span>
             <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-4">Apa Kata Mereka?</h2>
-            <p class="text-slate-600 max-w-2xl mx-auto text-lg">Ribuan creator telah membuktikan kemudahan membuat konten visual profesional dengan RIA Prompt.</p>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg">Copy prompt, paste ke ChatGPT, langsung beres. Begitu simpel workflow-nya.</p>
         </div>
 
         <!-- Swiper -->
-        <div class="swiper testimonialSwiper pb-12 h-64">
+        <div class="swiper testimonialSwiper pb-12" style="height: 220px;">
             <div class="swiper-wrapper">
                 <!-- Testimonial 1 -->
-                <div class="swiper-slide h-auto">
-                    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100 h-full flex flex-col hover:border-primary transition-all duration-300">
-                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <div class="swiper-slide">
+                    <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
+                        <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-lg leading-relaxed mb-4 italic line-clamp-3">"Sangat membantu untuk membuat konten jualan. Gak perlu bingung lagi mau nulis apa buat caption dsn promosi."</p>
-                        <div class="mt-auto flex items-center gap-3">
-                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                        <p class="text-slate-700 text-sm leading-relaxed mb-3 italic relative z-10 line-clamp-3">"Pengen design cepet buat konten. Tinggal copy prompt dari RIA, paste ke ChatGPT, langsung beres!"</p>
+                        <div class="mt-auto flex items-center gap-2.5 pt-3 border-t border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-white/80 flex items-center justify-center overflow-hidden ring-1 ring-slate-200 shrink-0">
                                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=450&h=450&auto=format&fit=crop" alt="Andi Pratama" class="w-full h-full object-cover">
                             </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 ">Andi Pratama</h4>
-                                <p class="text-sm text-slate-500 font-medium">Digital Marketer</p>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-slate-900 text-base truncate">Andi Pratama</h4>
+                                <p class="text-sm text-slate-600 font-medium">Digital Marketer</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="swiper-slide h-auto">
-                    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100 h-full flex flex-col hover:border-primary transition-all duration-300">
-                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <div class="swiper-slide">
+                    <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
+                        <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-lg leading-relaxed mb-4 italic line-clamp-3">"Fitur prompt generator-nya keren banget. Hasilnya presisi banget sesuai kebutuhan konten saya."</p>
-                        <div class="mt-auto flex items-center gap-3">
-                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                        <p class="text-slate-700 text-sm leading-relaxed mb-3 italic relative z-10 line-clamp-3">"Gak perlu ribet. Prompt tinggal copy-paste ke ChatGPT, langsung hasil design keluar. Cepet banget!"</p>
+                        <div class="mt-auto flex items-center gap-2.5 pt-3 border-t border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-white/80 flex items-center justify-center overflow-hidden ring-1 ring-slate-200 shrink-0">
                                 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=450&h=450&auto=format&fit=crop" alt="Siti Rahma" class="w-full h-full object-cover">
                             </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 ">Siti Rahma</h4>
-                                <p class="text-sm text-slate-500 font-medium">Content Creator</p>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-slate-900 text-base truncate">Siti Rahma</h4>
+                                <p class="text-sm text-slate-600 font-medium">Content Creator</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="swiper-slide h-auto">
-                    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100 h-full flex flex-col hover:border-primary transition-all duration-300">
-                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <div class="swiper-slide">
+                    <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
+                        <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-lg leading-relaxed mb-4 italic line-clamp-3">"User interface-nya intuitif dan gampang dipake bahkan buat orang awam sekalipun."</p>
-                        <div class="mt-auto flex items-center gap-3">
-                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                        <p class="text-slate-700 text-sm leading-relaxed mb-3 italic relative z-10 line-clamp-3">"Workflow-nya simpel: pilih prompt, copy, masukin ke ChatGPT, langsung beres. Mau design cepet ya gini caranya."</p>
+                        <div class="mt-auto flex items-center gap-2.5 pt-3 border-t border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-white/80 flex items-center justify-center overflow-hidden ring-1 ring-slate-200 shrink-0">
                                 <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=450&h=450&auto=format&fit=crop" alt="Budi Santoso" class="w-full h-full object-cover">
                             </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 ">Budi Santoso</h4>
-                                <p class="text-sm text-slate-500 font-medium">Entrepreneur</p>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-slate-900 text-base truncate">Budi Santoso</h4>
+                                <p class="text-sm text-slate-600 font-medium">Entrepreneur</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 4 -->
-                <div class="swiper-slide h-auto">
-                    <div class="bg-slate-50 p-5 rounded-3xl border border-slate-100 h-full flex flex-col hover:border-primary transition-all duration-300">
-                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <div class="swiper-slide">
+                    <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
+                        <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-600 text-lg leading-relaxed mb-4 italic line-clamp-3">"Mantap pokoknya! Gak rugi beli lifetime access. Fiturnya terus diupdate juga."</p>
-                        <div class="mt-auto flex items-center gap-3">
-                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                        <p class="text-slate-700 text-sm leading-relaxed mb-3 italic relative z-10 line-clamp-3">"Dulu bingung mau design gimana. Sekarang tinggal copy prompt ke ChatGPT, langsung jadi. Super praktis!"</p>
+                        <div class="mt-auto flex items-center gap-2.5 pt-3 border-t border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-white/80 flex items-center justify-center overflow-hidden ring-1 ring-slate-200 shrink-0">
                                 <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=450&h=450&auto=format&fit=crop" alt="Rina Wati" class="w-full h-full object-cover">
                             </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 ">Rina Wati</h4>
-                                <p class="text-sm text-slate-500 font-medium">Social Media Manager</p>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-slate-900 text-base truncate">Rina Wati</h4>
+                                <p class="text-sm text-slate-600 font-medium">Social Media Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="swiper-slide">
+                    <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
+                        <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-3 italic relative z-10 line-clamp-3">"Mau design cepet? Copy prompt dari sini, paste ke ChatGPT, langsung selesai. Gak perlu skill desain!"</p>
+                        <div class="mt-auto flex items-center gap-2.5 pt-3 border-t border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-white/80 flex items-center justify-center overflow-hidden ring-1 ring-slate-200 shrink-0">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=450&h=450&auto=format&fit=crop" alt="Dewi Kusuma" class="w-full h-full object-cover">
+                            </div>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-slate-900 text-base truncate">Dewi Kusuma</h4>
+                                <p class="text-sm text-slate-600 font-medium">Freelance Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="swiper-slide">
+                    <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
+                        <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                            <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-3 italic relative z-10 line-clamp-3">"Tinggal salin prompt, masukkan ke ChatGPT, design langsung jadi. Cepet dan gampang banget!"</p>
+                        <div class="mt-auto flex items-center gap-2.5 pt-3 border-t border-slate-200/80">
+                            <div class="w-10 h-10 rounded-lg bg-white/80 flex items-center justify-center overflow-hidden ring-1 ring-slate-200 shrink-0">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=450&h=450&auto=format&fit=crop" alt="Fajar Nugroho" class="w-full h-full object-cover">
+                            </div>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-slate-900 text-base truncate">Fajar Nugroho</h4>
+                                <p class="text-sm text-slate-600 font-medium">Startup Founder</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination -bottom-2!"></div>
+            <!-- Pagination - Visible -->
+            <div class="swiper-pagination !relative !mt-8"></div>
         </div>
     </div>
 </section>
@@ -1049,6 +1212,9 @@
 <section id="pricing" class="py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 text-amber-800 text-sm font-bold mb-6 border border-amber-200">
+                <span>⚠️</span> Harga bisa berubah sewaktu-waktu. Dapatkan sekarang!
+            </div>
             <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-4">Investasi Terbaik untuk Kreativitas
                 Anda</h2>
             <p class="text-slate-600 max-w-2xl mx-auto text-lg">Akses lifetime dengan harga spesial. Bayar sekali,
@@ -1076,10 +1242,11 @@
                     <h3 class="text-2xl font-bold text-white mb-2">RIA Prompt Premium</h3>
                     <p class="text-white/80 text-sm mb-8">Akses selamanya tanpa biaya berlangganan bulanan</p>
 
-                    <div class="flex items-end gap-2 mb-8">
+                    <div class="flex items-end gap-2 mb-4">
                         <span class="text-6xl font-extrabold text-white">Rp 99rb</span>
                         <span class="text-white/60 font-medium mb-3 line-through">Rp 299rb</span>
                     </div>
+                    <p class="text-amber-200 text-sm font-semibold mb-8">⏰ Harga promo dapat berubah kapan saja. Lock harga sekarang!</p>
 
                     <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8">
                         <h4 class="text-white font-bold mb-4 flex items-center gap-2">
@@ -1144,13 +1311,16 @@
                         </ul>
                     </div>
 
-                    <a href="/checkout" style="background-color: white; color: #279b84;"
+                    <button type="button" onclick="openLeadModal()" style="background-color: white; color: #279b84;"
                         class="block w-full text-center py-5 font-bold rounded-2xl hover:bg-slate-50 transition-all transform active:scale-95 shadow-xl text-lg">
                         Dapatkan Akses Lifetime Sekarang
-                    </a>
+                    </button>
 
                     <p class="text-center text-white/60 text-xs mt-4">
                         💳 Pembayaran aman & terpercaya • 🔒 Garansi 7 hari uang kembali
+                    </p>
+                    <p class="text-center text-amber-200/90 text-xs mt-2 font-medium">
+                        Harga dapat naik sewaktu-waktu. Amankan harga promo sekarang!
                     </p>
                 </div>
             </div>
@@ -1202,10 +1372,10 @@
         <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">Gabung dengan ribuan creator yang
             sudah menggunakan RIA Prompt untuk menghasilkan konten profesional dengan cepat dan efisien.</p>
 
-        <a href="/register"
+        <button type="button" onclick="openLeadModal()"
             class="inline-flex items-center justify-center bg-primary text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-primary-dark transition-all shadow-2xl shadow-primary/30 active:scale-95 mb-8">
-            Mulai Secara Gratis Sekarang
-        </a>
+            Daftar & Mulai Sekarang
+        </button>
 
         <div class="flex items-center justify-center gap-6">
             <div class="flex -space-x-3 overflow-hidden">
@@ -1356,6 +1526,47 @@
         </div>
     </div>
 </section>
+
+<!-- Lead Modal -->
+<div id="leadModal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
+        <div class="fixed inset-0 bg-slate-900/60 transition-opacity" onclick="closeLeadModal()"></div>
+        <div class="relative inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-2xl rounded-2xl">
+            <div class="flex items-center justify-between mb-6">
+                <h3 id="modal-title" class="text-xl font-bold text-slate-900">Dapatkan Akses Lifetime</h3>
+                <button type="button" onclick="closeLeadModal()" class="p-2 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <p class="text-slate-600 text-sm mb-6">Isi data berikut untuk melanjutkan ke proses pembayaran.</p>
+            <form action="/leads" method="POST" class="space-y-4">
+                @csrf
+                <div>
+                    <label for="lead_name" class="block text-sm font-medium text-slate-700 mb-1">Nama Lengkap</label>
+                    <input type="text" id="lead_name" name="name" required
+                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                        placeholder="Masukkan nama lengkap">
+                </div>
+                <div>
+                    <label for="lead_email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                    <input type="email" id="lead_email" name="email" required
+                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                        placeholder="nama@email.com">
+                </div>
+                <div>
+                    <label for="lead_phone" class="block text-sm font-medium text-slate-700 mb-1">Nomor HP</label>
+                    <input type="tel" id="lead_phone" name="phone" required
+                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                        placeholder="08xxxxxxxxxx">
+                </div>
+                <button type="submit"
+                    class="w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-all shadow-lg shadow-primary/25">
+                    Lanjut ke Pembayaran
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 @endsection
 
 @section('scripts')
@@ -1364,7 +1575,7 @@
     // Initialize Swiper for Testimonials
     const testimonialSwiper = new Swiper('.testimonialSwiper', {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 24,
         loop: true,
         autoplay: {
             delay: 5000,
@@ -1377,7 +1588,7 @@
         breakpoints: {
             640: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 24,
             },
             1024: {
                 slidesPerView: 3,
@@ -1432,6 +1643,19 @@
         });
     });
 
+
+    // Lead Modal
+    function openLeadModal() {
+        document.getElementById('leadModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLeadModal() {
+        document.getElementById('leadModal').classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+    document.getElementById('leadModal').addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLeadModal();
+    });
 
     // Simple bounce horizontal animation
     const style = document.createElement('style');

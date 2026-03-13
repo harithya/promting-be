@@ -5,9 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'RIA Prompt - AI Image Prompt Builder Profesional')</title>
+    <meta name="description" content="@yield('description', 'RIA Prompt - Buat konten visual profesional dengan cepat. Copy prompt, paste ke ChatGPT, langsung beres. Ribuan contoh prompt siap pakai untuk promosi, edukasi, event & lebih banyak lagi. Akses lifetime, hemat 95% biaya.')">
+    <meta name="keywords" content="@yield('keywords', 'RIA Prompt, AI prompt, prompt ChatGPT, generate konten visual, AI image prompt, prompt builder, konten marketing, design cepat')">
+    <meta name="author" content="RIA Prompt">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}?v=1" type="image/png">
+    <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}?v=1">
+    <meta property="og:title" content="@yield('og_title', 'RIA Prompt - AI Image Prompt Builder Profesional')">
+    <meta property="og:description" content="@yield('og_description', 'Buat konten visual profesional dengan cepat. Copy prompt ke ChatGPT, langsung beres. Ribuan contoh prompt siap pakai.')">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @yield('styles')
@@ -19,7 +29,7 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .bg-primary {
@@ -61,24 +71,24 @@
                 </a>
 
                 @if (Request::is('/'))
-                    <nav class="hidden md:flex items-center gap-8">
-                        <a href="#home"
-                            class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Home</a>
-                        <a href="#templates"
-                            class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Templates</a>
-                        <a href="#features"
-                            class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Features</a>
-                        <a href="#pricing"
-                            class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Pricing</a>
-                        <a href="#faq"
-                            class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">FAQ</a>
-                    </nav>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#home"
+                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Home</a>
+                    <a href="#templates"
+                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Templates</a>
+                    <a href="#features"
+                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Features</a>
+                    <a href="#pricing"
+                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Pricing</a>
+                    <a href="#faq"
+                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">FAQ</a>
+                </nav>
                 @endif
 
                 <div class="flex items-center gap-4">
                     <a href="/login"
                         class="hidden sm:block bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 active:scale-95">Login Sekarang</a>
-                    
+
                     <!-- Mobile Menu Button -->
                     <button id="mobile-menu-toggle" class="md:hidden p-2 text-slate-600 hover:text-primary transition-colors">
                         <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,7 +140,7 @@
                 }
             }
 
-            if(toggleBtn) {
+            if (toggleBtn) {
                 toggleBtn.addEventListener('click', e => {
                     e.preventDefault();
                     toggleMenu();

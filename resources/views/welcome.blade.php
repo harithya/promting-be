@@ -122,7 +122,7 @@
                 </span>
                 #1 AI Content Generator for Creators
             </span>
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8">
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8">
                 Generate Konten Visual <span class="text-gradient">Profesional</span> dengan AI
             </h1>
             <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-10 px-4">
@@ -1557,7 +1557,7 @@
 </section>
 
 <!-- Lead Modal -->
-<div id="leadModal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+<div id="leadModal" class="fixed inset-0 z-50 overflow-y-auto {{ $errors->any() ? '' : 'hidden' }}" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
         <div class="fixed inset-0 bg-slate-900/60 transition-opacity" onclick="closeLeadModal()"></div>
         <div class="relative inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-2xl rounded-2xl">
@@ -1570,25 +1570,43 @@
                 </button>
             </div>
             <p class="text-slate-600 text-sm mb-6">Isi data berikut untuk melanjutkan ke proses pembayaran.</p>
-            <form action="/leads" method="POST" class="space-y-4">
+            @if($errors->any())
+            <div class="mb-4 p-4 rounded-xl bg-red-50 border border-red-200">
+                <ul class="text-sm text-red-600 space-y-1">
+                    @foreach($errors->all() as $error)
+                    <li>• {{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
+            <form action="{{ route('leads.store') }}" method="POST" class="space-y-4">
                 @csrf
                 <div>
                     <label for="lead_name" class="block text-sm font-medium text-slate-700 mb-1">Nama Lengkap</label>
-                    <input type="text" id="lead_name" name="name" required
-                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                    <input type="text" id="lead_name" name="name" value="{{ old('name') }}"
+                        class="w-full px-4 py-3 rounded-xl border @error('name') border-red-500 @else border-slate-200 @enderror focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                         placeholder="Masukkan nama lengkap">
+                    @error('name')
+                    <p class="mt-1 text-sm text-red-500">{{ $message }}</p>
+                    @enderror
                 </div>
                 <div>
                     <label for="lead_email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
-                    <input type="email" id="lead_email" name="email" required
-                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                    <input type="email" id="lead_email" name="email" value="{{ old('email') }}"
+                        class="w-full px-4 py-3 rounded-xl border @error('email') border-red-500 @else border-slate-200 @enderror focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                         placeholder="nama@email.com">
+                    @error('email')
+                    <p class="mt-1 text-sm text-red-500">{{ $message }}</p>
+                    @enderror
                 </div>
                 <div>
                     <label for="lead_phone" class="block text-sm font-medium text-slate-700 mb-1">Nomor HP</label>
-                    <input type="tel" id="lead_phone" name="phone" required
-                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                    <input type="tel" id="lead_phone" name="phone" value="{{ old('phone') }}"
+                        class="w-full px-4 py-3 rounded-xl border @error('phone') border-red-500 @else border-slate-200 @enderror focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                         placeholder="08xxxxxxxxxx">
+                    @error('phone')
+                    <p class="mt-1 text-sm text-red-500">{{ $message }}</p>
+                    @enderror
                 </div>
                 <button type="submit"
                     class="w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-all shadow-lg shadow-primary/25">
@@ -1685,6 +1703,9 @@
         document.getElementById('leadModal').classList.add('hidden');
         document.body.style.overflow = '';
     }
+    @if($errors - > any())
+    document.body.style.overflow = 'hidden';
+    @endif
     document.getElementById('leadModal').addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeLeadModal();
     });

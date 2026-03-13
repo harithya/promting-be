@@ -8,10 +8,10 @@
     <meta name="description" content="@yield('description', 'RIA Prompt - Buat konten visual profesional dengan cepat. Copy prompt, paste ke ChatGPT, langsung beres. Ribuan contoh prompt siap pakai untuk promosi, edukasi, event & lebih banyak lagi. Akses lifetime, hemat 95% biaya.')">
     <meta name="keywords" content="@yield('keywords', 'RIA Prompt, AI prompt, prompt ChatGPT, generate konten visual, AI image prompt, prompt builder, konten marketing, design cepat')">
     <meta name="author" content="RIA Prompt">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=1">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon.png') }}?v=1">
-    <link rel="shortcut icon" href="{{ asset('favicon.png') }}?v=1" type="image/png">
-    <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('faavicon.png') }}?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('faavicon.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('faavicon.png') }}?v=1" type="image/png">
+    <link rel="apple-touch-icon" href="{{ asset('faavicon.png') }}?v=1">
     <meta property="og:title" content="@yield('og_title', 'RIA Prompt - AI Image Prompt Builder Profesional')">
     <meta property="og:description" content="@yield('og_description', 'Buat konten visual profesional dengan cepat. Copy prompt ke ChatGPT, langsung beres. Ribuan contoh prompt siap pakai.')">
     <meta property="og:type" content="website">
@@ -63,34 +63,28 @@
 <body class="antialiased text-slate-900 bg-white">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 sm:h-20">
-                <a href="/" class="flex items-center gap-3">
-                    <img src="{{ asset('images/logo.png') }}" alt="RIA Prompt Logo" class="h-10 w-auto">
+            <div class="flex justify-between items-center h-14 sm:h-16 min-h-[56px]">
+                <a href="/" class="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0">
+                    <img src="{{ asset('images/logo.png') }}" alt="RIA Prompt Logo" class="h-8 sm:h-10 w-auto max-h-10 object-contain">
                 </a>
 
-                @if (Request::is('/'))
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="#home"
-                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Home</a>
-                    <a href="#templates"
-                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Templates</a>
-                    <a href="#features"
-                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Features</a>
-                    <a href="#pricing"
-                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Pricing</a>
-                    <a href="#faq"
-                        class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">FAQ</a>
+                <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
+                    <a href="/#home" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Home</a>
+                    <a href="/#templates" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Templates</a>
+                    <a href="/#features" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Features</a>
+                    <a href="/#pricing" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Pricing</a>
+                    <a href="/#faq" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">FAQ</a>
                 </nav>
-                @endif
 
-                <div class="flex items-center gap-4">
-                    <a href="/login"
-                        class="hidden sm:block bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 active:scale-95">Login Sekarang</a>
+                <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+                    <a href="/login" class="hidden sm:inline-flex items-center justify-center bg-primary text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold hover:bg-primary-dark transition-colors">
+                        Login
+                    </a>
 
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-toggle" class="md:hidden p-2 text-slate-600 hover:text-primary transition-colors">
+                    <button type="button" id="mobile-menu-toggle" aria-label="Toggle menu" class="lg:hidden p-2 -mr-2 text-slate-600 hover:text-primary hover:bg-slate-100 rounded-lg transition-colors touch-manipulation">
                         <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -103,17 +97,17 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100">
-            <div class="px-4 pt-2 pb-6 space-y-1">
-                <a href="#home" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Home</a>
-                <a href="#templates" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Templates</a>
-                <a href="#features" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Features</a>
-                <a href="#pricing" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Pricing</a>
-                <a href="#faq" class="mobile-nav-link block px-3 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">FAQ</a>
-                <div class="pt-4 border-t border-slate-100">
-                    <a href="/login" class="block w-full text-center bg-primary text-white px-5 py-3 rounded-full text-sm font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25">Login Sekarang</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 overflow-hidden">
+            <nav class="px-4 py-4 space-y-1 max-h-[calc(100vh-4rem)] overflow-y-auto">
+                <a href="/#home" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-colors">Home</a>
+                <a href="/#templates" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Templates</a>
+                <a href="/#features" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Features</a>
+                <a href="/#pricing" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Pricing</a>
+                <a href="/#faq" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">FAQ</a>
+                <div class="pt-4 mt-4 border-t border-slate-100">
+                    <a href="/login" class="mobile-nav-link block w-full text-center bg-primary text-white px-5 py-3 rounded-xl text-sm font-bold hover:bg-primary-dark transition-colors">Login Sekarang</a>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
 

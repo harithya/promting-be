@@ -30,7 +30,7 @@ class LeadController extends Controller
      */
     public function success(string $merchantRef)
     {
-        $data['transaction'] = Transaction::where('code', $merchantRef)->firstOrFail();
+        $data['transaction'] = Transaction::where('merchant_ref', $merchantRef)->firstOrFail();
         return view('success', $data);
     }
 
@@ -38,7 +38,7 @@ class LeadController extends Controller
     {
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'email'],
+            'email' => ['required', 'email', 'unique:users,email'],
             'phone' => ['required', 'string', 'max:20'],
             'payment_method' => ['required', 'string'],
         ]);
@@ -76,7 +76,7 @@ class LeadController extends Controller
 
         // Save transaction to database
         $transaction = Transaction::create([
-            'code' => $merchantRef,
+            'merchant_ref' => $merchantRef,
             'reference' => $result['data']['reference'] ?? null,
             'amount' => $result['data']['amount'],
             'amount_received' => $result['data']['amount_received'] ?? 0,

@@ -13,11 +13,26 @@
         0% { transform: translateY(20px); opacity: 0; }
         100% { transform: translateY(0); opacity: 1; }
     }
+    @keyframes check-draw {
+        0% { stroke-dashoffset: 100; }
+        100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulse-ring {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 0.4; }
+        100% { transform: scale(0.95); opacity: 0.8; }
+    }
     .animate-scale-in { animation: scale-in 0.6s ease-out forwards; }
     .animate-fade-up { animation: fade-up 0.6s ease-out forwards; }
     .animate-fade-up-delay-1 { animation: fade-up 0.6s ease-out 0.2s forwards; opacity: 0; }
     .animate-fade-up-delay-2 { animation: fade-up 0.6s ease-out 0.4s forwards; opacity: 0; }
     .animate-fade-up-delay-3 { animation: fade-up 0.6s ease-out 0.6s forwards; opacity: 0; }
+    .animate-check-draw {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+        animation: check-draw 0.6s ease-out 0.3s forwards;
+    }
+    .animate-pulse-ring { animation: pulse-ring 2s ease-in-out infinite; }
 </style>
 @endsection
 
@@ -33,10 +48,9 @@
                 <div class="p-8 sm:p-12">
                     <!-- Success Icon -->
                     <div class="relative flex justify-center mb-8">
-                        <div class="relative w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center animate-scale-in">
-                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                        <!-- Main icon container -->
+                        <div class="relative w-42 h-42 flex items-center justify-center animate-scale-in">
+                            <img src="{{ asset('images/Success.gif') }}" alt="Success" class="w-full h-full object-contain">
                         </div>
                     </div>
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\TripayCallbackController;
 use App\Http\Controllers\Transaction\TransactionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,5 +20,5 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
 
-Route::get('/transaction/payment', [TransactionController::class, 'payment']);
-Route::post('/transaction/create', [TransactionController::class, 'store']);
+// Tripay Callback
+Route::post('/tripay/callback', [TripayCallbackController::class, 'handle'])->name('tripay.callback');

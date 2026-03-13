@@ -28,6 +28,10 @@
             --primary-light: #e9f5f3;
         }
 
+        html, body {
+            overflow-x: hidden;
+        }
+
         body {
             font-family: 'Montserrat', sans-serif;
         }
@@ -60,7 +64,7 @@
     </style>
 </head>
 
-<body class="antialiased text-slate-900 bg-white overflow-x-hidden">
+<body class="antialiased text-slate-900 bg-white">
 
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 w-full" style="padding-top: env(safe-area-inset-top);">

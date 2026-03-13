@@ -914,7 +914,7 @@
                         </div>
                         <div>
                             <p class="font-bold text-white">Investasi Sangat Murah</p>
-                            <p class="text-sm text-slate-300 italic">Hanya Rp 99rb (Lifetime!) untuk ribuan konten.
+                            <p class="text-sm text-slate-300 italic">Hanya Rp 110rb (Lifetime!) untuk ribuan konten.
                             </p>
                         </div>
                     </li>
@@ -1307,7 +1307,7 @@
                     <p class="text-white/80 text-sm mb-8">Akses selamanya tanpa biaya berlangganan bulanan</p>
 
                     <div class="flex items-end gap-2 mb-4">
-                        <span class="text-6xl font-extrabold text-white">Rp 99rb</span>
+                        <span class="text-6xl font-extrabold text-white">Rp 110rb</span>
                         <span class="text-white/60 font-medium mb-3 line-through">Rp 299rb</span>
                     </div>
                     <p class="text-amber-200 text-sm font-semibold mb-8">⏰ Harga promo dapat berubah kapan saja. Lock harga sekarang!</p>
@@ -1572,20 +1572,7 @@
                 </div>
             </div>
 
-            <div
-                class="faq-item bg-white rounded-2xl border border-slate-100 overflow-hidden transition-all hover:shadow-md">
-                <button class="w-full px-6 py-5 text-left flex justify-between items-center group">
-                    <span class="font-bold text-slate-900 group-hover:text-primary transition-colors">Apakah ada
-                        jaminan uang kembali?</span>
-                    <svg class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-                <div class="px-6 pb-5 text-slate-600 text-sm leading-relaxed hidden">
-                    RIA Prompt tidak menyediakan refund atau pengembalian dana. Produk merupakan akses digital lifetime. Silakan pelajari informasi produk sebelum pembelian. Untuk kendala teknis atau pertanyaan, hubungi tim kami.
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>
@@ -1654,9 +1641,7 @@
                                     <img src="{{ $payment['icon_url'] }}" alt="{{ $payment['name'] }}" class="w-12 h-12 object-contain">
                                     <div class="flex-1">
                                         <p class="text-sm font-medium text-slate-900">{{ $payment['name'] }}</p>
-                                        @if(isset($payment['fee_merchant']))
-                                        <p class="text-xs text-slate-500">Fee: {{ $payment['fee_merchant']['flat'] > 0 ? 'Rp ' . number_format($payment['fee_merchant']['flat'], 0, ',', '.') : 'Gratis' }}</p>
-                                        @endif
+                                     
                                     </div>
                                 </label>
                             @endforeach

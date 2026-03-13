@@ -7,12 +7,7 @@ Route::get('/', [LeadController::class, "index"]);
 
 Route::post('/leads', [LeadController::class, 'store'])->name('leads.store');
 
-Route::get('/success', function () {
-    if (!session('lead_email')) {
-        return redirect('/#pricing');
-    }
-    return view('success');
-})->name('success');
+Route::get('/success/{merchant_ref}', [LeadController::class, 'success'])->name('success');
 
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');

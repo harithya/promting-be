@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>@yield('title', 'RIA Prompt - AI Image Prompt Builder Profesional')</title>
     <meta name="description" content="@yield('description', 'RIA Prompt - Buat konten visual profesional dengan cepat. Copy prompt, paste ke ChatGPT, langsung beres. Ribuan contoh prompt siap pakai untuk promosi, edukasi, event & lebih banyak lagi. Akses lifetime, hemat 95% biaya.')">
     <meta name="keywords" content="@yield('keywords', 'RIA Prompt, AI prompt, prompt ChatGPT, generate konten visual, AI image prompt, prompt builder, konten marketing, design cepat')">
@@ -60,31 +60,31 @@
     </style>
 </head>
 
-<body class="antialiased text-slate-900 bg-white">
+<body class="antialiased text-slate-900 bg-white overflow-x-hidden">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-14 sm:h-16 min-h-[56px]">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 w-full" style="padding-top: env(safe-area-inset-top);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="flex justify-between items-center h-14 sm:h-16 min-h-[56px] gap-2 min-w-0">
                 <a href="/" class="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0">
-                    <img src="{{ asset('images/logo.png') }}" alt="RIA Prompt Logo" class="h-8 sm:h-10 w-auto max-h-10 object-contain">
+                    <img src="{{ asset('images/logo.png') }}" alt="RIA Prompt Logo" class="h-7 sm:h-9 md:h-10 w-auto max-h-10 object-contain">
                 </a>
 
-                <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
-                    <a href="/#home" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Home</a>
-                    <a href="/#templates" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Templates</a>
-                    <a href="/#features" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Features</a>
-                    <a href="/#pricing" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Pricing</a>
-                    <a href="/#faq" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">FAQ</a>
+                <nav class="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 shrink-0">
+                    <a href="/#home" class="text-xs md:text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Home</a>
+                    <a href="/#templates" class="text-xs md:text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Templates</a>
+                    <a href="/#features" class="text-xs md:text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Features</a>
+                    <a href="/#pricing" class="text-xs md:text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">Pricing</a>
+                    <a href="/#faq" class="text-xs md:text-sm font-semibold text-slate-600 hover:text-primary transition-colors whitespace-nowrap">FAQ</a>
                 </nav>
 
-                <div class="flex items-center gap-2 sm:gap-4 shrink-0">
-                    <a href="/login" class="hidden sm:inline-flex items-center justify-center bg-primary text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold hover:bg-primary-dark transition-colors">
-                        Login
+                <div class="flex items-center gap-1 sm:gap-2 shrink-0">
+                    <a href="/login" class="hidden sm:inline-flex items-center justify-center bg-primary text-white px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold hover:bg-primary-dark transition-colors whitespace-nowrap">
+                        Login Sekarang
                     </a>
 
-                    <!-- Mobile Menu Button -->
-                    <button type="button" id="mobile-menu-toggle" aria-label="Toggle menu" class="lg:hidden p-2 -mr-2 text-slate-600 hover:text-primary hover:bg-slate-100 rounded-lg transition-colors touch-manipulation">
+                    <!-- Mobile Menu Button - min 44px touch target -->
+                    <button type="button" id="mobile-menu-toggle" aria-label="Toggle menu" class="md:hidden p-3 -mr-2 -my-1 min-w-[44px] min-h-[44px] flex items-center justify-center text-slate-600 hover:text-primary hover:bg-slate-100 rounded-lg transition-colors touch-manipulation">
                         <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -97,8 +97,8 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 overflow-hidden">
-            <nav class="px-4 py-4 space-y-1 max-h-[calc(100vh-4rem)] overflow-y-auto">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 overflow-hidden w-full" style="padding-bottom: env(safe-area-inset-bottom);">
+            <nav class="px-4 py-4 space-y-1 max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
                 <a href="/#home" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-colors">Home</a>
                 <a href="/#templates" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Templates</a>
                 <a href="/#features" class="mobile-nav-link block px-4 py-3 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">Features</a>

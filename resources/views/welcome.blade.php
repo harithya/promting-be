@@ -1703,7 +1703,7 @@
         document.getElementById('leadModal').classList.add('hidden');
         document.body.style.overflow = '';
     }
-    @if($errors - > any())
+    @if($errors->any())
     document.body.style.overflow = 'hidden';
     @endif
     document.getElementById('leadModal').addEventListener('keydown', function(e) {

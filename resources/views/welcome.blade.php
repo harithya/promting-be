@@ -9,14 +9,14 @@
     }
 
     .hero-grid-subtle {
-        background-image: 
+        background-image:
             linear-gradient(to right, rgba(39, 155, 132, 0.1) 1px, transparent 1px),
             linear-gradient(to bottom, rgba(39, 155, 132, 0.1) 1px, transparent 1px);
         background-size: 80px 80px;
     }
 
     .hero-grid-primary {
-        background-image: 
+        background-image:
             linear-gradient(to right, rgba(39, 155, 132, 0.2) 1px, transparent 1px),
             linear-gradient(to bottom, rgba(39, 155, 132, 0.2) 1px, transparent 1px);
         background-size: 40px 40px;
@@ -28,9 +28,17 @@
     }
 
     @keyframes grid-move {
-        0% { transform: translate(0, 0); }
-        50% { transform: translate(10px, 10px); }
-        100% { transform: translate(0, 0); }
+        0% {
+            transform: translate(0, 0);
+        }
+
+        50% {
+            transform: translate(10px, 10px);
+        }
+
+        100% {
+            transform: translate(0, 0);
+        }
     }
 
     .animate-grid {
@@ -68,6 +76,7 @@
         margin-top: 2rem !important;
         bottom: auto !important;
     }
+
     .testimonialSwiper .swiper-pagination-bullet {
         width: 12px !important;
         height: 12px !important;
@@ -75,6 +84,7 @@
         opacity: 1 !important;
         transition: all 0.3s ease;
     }
+
     .testimonialSwiper .swiper-pagination-bullet-active {
         background: var(--primary) !important;
         width: 32px !important;
@@ -618,7 +628,7 @@
             <div
                 class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div class=" overflow-hidden">
-                    <img src="/images/result/promo2.png" alt="Contoh Hasil Generate"
+                    <img src="/images/result/p-1.png" alt="Contoh Hasil Generate"
                         class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
                 </div>
             </div>
@@ -690,7 +700,7 @@
             <div
                 class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div class=" overflow-hidden">
-                    <img src="/images/result/motivasi.png" alt="Contoh Hasil Generate"
+                    <img src="/images/result/p-3.png" alt="Contoh Hasil Generate"
                         class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
                 </div>
             </div>
@@ -719,7 +729,7 @@
             <div
                 class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div class=" overflow-hidden">
-                    <img src="/images/result/contoh4.png" alt="Contoh Hasil Generate"
+                    <img src="/images/result/p-2.png" alt="Contoh Hasil Generate"
                         class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
                 </div>
             </div>
@@ -727,6 +737,13 @@
                 class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div class=" overflow-hidden">
                     <img src="/images/result/contoh5.png" alt="Contoh Hasil Generate"
+                        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+            <div
+                class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 md:hidden ">
+                <div class=" overflow-hidden">
+                    <img src="/images/result/contoh4.png" alt="Contoh Hasil Generate"
                         class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
                 </div>
             </div>
@@ -1049,7 +1066,9 @@
                 <div class="swiper-slide">
                     <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
                         <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
                         </div>
                         <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
@@ -1075,7 +1094,9 @@
                 <div class="swiper-slide">
                     <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
                         <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
                         </div>
                         <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
@@ -1101,7 +1122,9 @@
                 <div class="swiper-slide">
                     <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
                         <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
                         </div>
                         <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
@@ -1127,7 +1150,9 @@
                 <div class="swiper-slide">
                     <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
                         <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
                         </div>
                         <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
@@ -1153,7 +1178,9 @@
                 <div class="swiper-slide">
                     <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
                         <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
                         </div>
                         <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
@@ -1179,7 +1206,9 @@
                 <div class="swiper-slide">
                     <div class="group relative bg-white p-5 rounded-xl border border-slate-200 w-full h-full flex flex-col hover:shadow-md overflow-hidden transition-all duration-300">
                         <div class="absolute top-3 right-3 text-primary/20 group-hover:text-primary/40 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
                         </div>
                         <div class="flex items-center gap-0.5 text-amber-400 mb-1.5">
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
@@ -1535,7 +1564,9 @@
             <div class="flex items-center justify-between mb-6">
                 <h3 id="modal-title" class="text-xl font-bold text-slate-900">Dapatkan Akses Lifetime</h3>
                 <button type="button" onclick="closeLeadModal()" class="p-2 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition-colors">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                 </button>
             </div>
             <p class="text-slate-600 text-sm mb-6">Isi data berikut untuk melanjutkan ke proses pembayaran.</p>
@@ -1649,6 +1680,7 @@
         document.getElementById('leadModal').classList.remove('hidden');
         document.body.style.overflow = 'hidden';
     }
+
     function closeLeadModal() {
         document.getElementById('leadModal').classList.add('hidden');
         document.body.style.overflow = '';

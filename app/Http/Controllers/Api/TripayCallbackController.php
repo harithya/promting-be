@@ -111,6 +111,7 @@ class TripayCallbackController extends Controller
                     $user = User::create([
                         'name' => $transaction->customer_name,
                         'email' => $transaction->customer_email,
+                        'phone' => $transaction->customer_phone,
                         'password' => Hash::make($password),
                         'is_admin' => 0,
                         'status' => UserStatus::ACTIVE->value,

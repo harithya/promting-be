@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Transaction;
 use App\Models\User;
+use App\Services\PushWaService;
 use App\UserStatus;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -14,6 +15,12 @@ use Illuminate\Support\Str;
 
 class TripayCallbackController extends Controller
 {
+    protected PushWaService $pushWaService;
+
+    public function __construct(PushWaService $pushWaService)
+    {
+        $this->pushWaService = $pushWaService;
+    }
     /**
      * Handle Tripay callback notification.
      */
@@ -122,12 +129,18 @@ class TripayCallbackController extends Controller
                         'user_id' => $user->id
                     ]);
 
-                    // TODO: Send WhatsApp notification with access credentials
+                    // Send WA notification with credentials
+                    $this->pushWaService->sendPaymentSuccess(
+                        phone: $transaction->customer_phone,
+                        name: $transaction->customer_name,
+                        email: $transaction->customer_email,
+                        password: $password
+                    );
+
                     Log::info('User created for transaction', [
                         'user_id' => $user->id,
                         'transaction_id' => $transaction->id,
                         'phone' => $transaction->customer_phone,
-                        'password' => $password // Remove this in production
                     ]);
                 }
             }

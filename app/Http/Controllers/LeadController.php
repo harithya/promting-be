@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Transaction;
+use App\Services\PushWaService;
 use App\Services\TripayService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -10,10 +11,12 @@ use Illuminate\Http\Request;
 class LeadController extends Controller
 {
     protected TripayService $tripayService;
+    protected PushWaService $pushWaService;
 
-    public function __construct(TripayService $tripayService)
+    public function __construct(TripayService $tripayService, PushWaService $pushWaService)
     {
         $this->tripayService = $tripayService;
+        $this->pushWaService = $pushWaService;
     }
 
     public function index()
@@ -87,6 +90,15 @@ class LeadController extends Controller
             'customer_phone' => $validated['phone'],
             'checkout_url' => $result['data']['checkout_url'] ?? null,
         ]);
+
+        // Send WA notification - transaction created
+        $this->pushWaService->sendTransactionCreated(
+            phone: $validated['phone'],
+            name: $validated['name'],
+            merchantRef: $merchantRef,
+            amount: 110000,
+            checkoutUrl: $result['data']['checkout_url'] ?? url('/')
+        );
 
         // Redirect to checkout URL
         if (isset($result['data']['checkout_url'])) {

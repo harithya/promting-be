@@ -60,6 +60,31 @@ class AuthController extends Controller implements HasMiddleware
     }
 
     /**
+     * Change the authenticated user's password.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function changePassword(Request $request)
+    {
+        $request->validate([
+            'current_password' => 'required|string',
+            'new_password'     => 'required|string|min:6|confirmed',
+        ]);
+
+        $user = auth('api')->user();
+
+        if (! \Hash::check($request->current_password, $user->password)) {
+            return response()->json([
+                'errors' => ['current_password' => ['Password lama tidak sesuai.']]
+            ], 422);
+        }
+
+        $user->update(['password' => \Hash::make($request->new_password)]);
+
+        return response()->json(['message' => 'Password berhasil diubah.']);
+    }
+
+    /**
      * Refresh a token.
      *
      * @return \Illuminate\Http\JsonResponse

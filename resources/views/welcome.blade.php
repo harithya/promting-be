@@ -997,79 +997,117 @@
 </section>
 
 <!-- Benefit Section -->
-<section class="py-28 relative overflow-hidden">
-    <!-- Dynamic gradient background -->
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-slate-50 via-primary/5 to-indigo-50/80"></div>
-    <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[150px] -z-10 animate-pulse"></div>
-    <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-indigo-400/20 rounded-full blur-[120px] -z-10 animate-pulse" style="animation-delay: 1s;"></div>
-    <!-- Grid pattern overlay -->
-    <div class="absolute inset-0 -z-10 opacity-30" style="background-image: radial-gradient(rgba(39,155,132,0.15) 1px, transparent 1px); background-size: 32px 32px;"></div>
+<section class="py-28 relative overflow-hidden bg-white">
+    <div class="absolute inset-0 -z-10 opacity-40" style="background-image: radial-gradient(rgba(39,155,132,0.08) 1px, transparent 1px); background-size: 28px 28px;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20">
-            <span class="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-white/80 backdrop-blur-sm text-primary font-bold tracking-widest uppercase text-xs mb-6 border border-primary/20 shadow-sm">
+        <div class="text-center mb-16">
+            <span class="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-primary/10 text-primary font-bold tracking-widest uppercase text-xs mb-6 border border-primary/20">
                 <span class="relative flex h-2 w-2">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </span>
-                Kenapa RIA Prompt?
+                Cocok Untuk Siapa?
             </span>
-            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                Bukan Sekadar Prompt, Tapi <span class="text-gradient italic">Senjata Rahasia</span> Kreator Modern
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-5 leading-tight">
+                Semua yang <span class="text-gradient italic">Butuh Konten</span> Setiap Hari
             </h2>
-            <p class="text-slate-600 max-w-2xl mx-auto text-lg sm:text-xl">Hentikan kebiasaan menebak-nebak. Mulailah
-                membangun konten yang beneran <span class="font-bold text-slate-900">menghasilkan</span> dengan
-                struktur yang teruji.</p>
+            <p class="text-slate-500 max-w-xl mx-auto text-lg">Dari HR, admin sosmed, UMKM, sampai kreator — semua punya use case-nya sendiri di sini.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Benefit 1 - Berhenti Menebak -->
-            <div class="group benefit-card rounded-3xl p-8 hover:-translate-y-3 transition-all duration-500">
-                <span class="absolute top-6 right-6 text-8xl font-black text-amber-500/10 group-hover:text-amber-500/15 transition-opacity">01</span>
-                <div class="relative">
-                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 text-amber-800 text-sm font-bold mb-5 border border-amber-400/20">
-                        2 jam → Detik
-                    </span>
-                    <h3 class="text-xl font-extrabold text-slate-900 mb-3">Berhenti Menebak</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Jangan buang waktu cuma nyari 1 prompt. Pilih kategori, <span class="text-primary font-extrabold">beres dalam detik</span>.</p>
+        <!-- Use Case Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- 1 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">📢</div>
+                <div>
+                    <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Promosi & Iklan</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Flash Sale & Diskon</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Generate visual promo harga coret, countdown sale, dan banner diskon yang langsung menarik perhatian.</p>
                 </div>
             </div>
 
-            <!-- Benefit 2 - Struktur Level Pro -->
-            <div class="group benefit-card rounded-3xl p-8 hover:-translate-y-3 transition-all duration-500">
-                <span class="absolute top-6 right-6 text-8xl font-black text-emerald-500/10 group-hover:text-emerald-500/15 transition-opacity">02</span>
-                <div class="relative">
-                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/10 text-emerald-800 text-sm font-bold mb-5 border border-emerald-400/20">
-                        Logic Teruji
-                    </span>
-                    <h3 class="text-xl font-extrabold text-slate-900 mb-3">Struktur Level Pro</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Prompt dirancang dengan <span class="text-primary font-extrabold">logic terstruktur</span>. Hasil AI akurat, bukan asal-asalan.</p>
+            <!-- 2 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">💼</div>
+                <div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">HR & Rekrutmen</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Poster Lowongan Kerja</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Buat visual lowongan yang eye-catching di LinkedIn & Instagram tanpa perlu skill desain sama sekali.</p>
                 </div>
             </div>
 
-            <!-- Benefit 3 - Inspirasi Tanpa Batas -->
-            <div class="group benefit-card rounded-3xl p-8 hover:-translate-y-3 transition-all duration-500">
-                <span class="absolute top-6 right-6 text-8xl font-black text-violet-500/10 group-hover:text-violet-500/15 transition-opacity">03</span>
-                <div class="relative">
-                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-violet-500/10 text-violet-800 text-sm font-bold mb-5 border border-violet-400/20">
-                        500+ Contoh
-                    </span>
-                    <h3 class="text-xl font-extrabold text-slate-900 mb-3">Inspirasi Tanpa Batas</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Buntu ide? Ratusan contoh nyata siap kamu <span class="text-primary font-extrabold">modifikasi</span> dalam hitungan detik.</p>
+            <!-- 3 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">📱</div>
+                <div>
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Admin Sosmed</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Konten Feed Harian</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Kelola banyak akun sekaligus. Produksi konten carousel, quote, dan reels caption 3x lebih cepat.</p>
                 </div>
             </div>
 
-            <!-- Benefit 4 - Satu Untuk Semua -->
-            <div class="group benefit-card rounded-3xl p-8 hover:-translate-y-3 transition-all duration-500">
-                <span class="absolute top-6 right-6 text-8xl font-black text-orange-500/10 group-hover:text-orange-500/15 transition-opacity">04</span>
-                <div class="relative">
-                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-500/10 text-orange-800 text-sm font-bold mb-5 border border-orange-400/20">
-                        Universal
-                    </span>
-                    <h3 class="text-xl font-extrabold text-slate-900 mb-3">Satu Untuk Semua</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">ChatGPT, Gemini, Claude, Midjourney. <span class="text-primary font-extrabold">Universal access</span> tanpa batas platform.</p>
+            <!-- 4 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">🎓</div>
+                <div>
+                    <span class="text-xs font-bold text-violet-600 uppercase tracking-wider">Edukasi & Kursus</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Infografis & Tips</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Buat konten edukasi, infografis tips, dan materi kursus yang informatif dan enak dilihat.</p>
                 </div>
             </div>
+
+            <!-- 5 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-rose-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">🎉</div>
+                <div>
+                    <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Event & Acara</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Poster & Undangan Digital</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Webinar, seminar, gathering, atau launching produk — semua ada template posternya, tinggal generate.</p>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">🍽️</div>
+                <div>
+                    <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">Kuliner & F&B</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Menu & Promo Restoran</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Visual menu baru, promo paket makan, atau konten behind-the-scenes dapur yang bikin ngiler.</p>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">🏢</div>
+                <div>
+                    <span class="text-xs font-bold text-cyan-600 uppercase tracking-wider">Corporate</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Company Profile & Branding</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Konten profil perusahaan, pencapaian milestone, dan campaign internal yang terlihat profesional.</p>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">✨</div>
+                <div>
+                    <span class="text-xs font-bold text-yellow-600 uppercase tracking-wider">Motivasi & Lifestyle</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Quote & Konten Inspiratif</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Quote motivasi, konten self-improvement, dan lifestyle yang relate dengan audiens kamu.</p>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="group flex items-start gap-4 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center shrink-0 text-2xl group-hover:scale-110 transition-transform">🛍️</div>
+                <div>
+                    <span class="text-xs font-bold text-pink-600 uppercase tracking-wider">E-Commerce & Toko</span>
+                    <h3 class="font-extrabold text-slate-900 mt-1 mb-1">Launching Produk Baru</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Teaser produk, unboxing visual, testimoni pelanggan, dan konten review yang mendorong konversi.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -1077,6 +1115,165 @@
 
 
 
+
+<!-- Benefit Section -->
+<section class="py-28 relative overflow-hidden bg-white">
+    <div class="absolute inset-0 -z-10" style="background-image: radial-gradient(rgba(39,155,132,0.06) 1px, transparent 1px); background-size: 32px 32px;"></div>
+    <div class="absolute top-0 left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 -z-10"></div>
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-indigo-500/5 rounded-full blur-[100px] translate-x-1/3 translate-y-1/3 -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-primary/10 text-primary font-bold tracking-widest uppercase text-xs mb-6 border border-primary/20">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                Cocok Untuk Siapa?
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-5 leading-tight">
+                Satu Tool, <span class="text-gradient italic">Ribuan Use Case</span> Nyata
+            </h2>
+            <p class="text-slate-500 max-w-2xl mx-auto text-lg">Dari perusahaan besar, UMKM, kreator konten, sampai freelancer — semua punya kebutuhan konten harian yang bisa diselesaikan dengan RIA Prompt.</p>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 auto-rows-auto">
+
+            <!-- Featured Card - Promosi (spans 2 cols) -->
+            <div class="xl:col-span-2 group relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 p-8 hover:shadow-xl hover:shadow-amber-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-8 -right-8 text-[120px] opacity-10 group-hover:opacity-20 transition-opacity select-none">📢</div>
+                <span class="inline-block text-xs font-bold text-amber-600 uppercase tracking-wider bg-amber-100 px-3 py-1 rounded-full mb-4">Promosi & Iklan</span>
+                <h3 class="text-xl font-extrabold text-slate-900 mb-2">Flash Sale, Diskon & Iklan Produk</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">Generate visual promo harga coret, countdown sale, banner diskon, dan iklan produk yang langsung menarik perhatian — tanpa perlu desainer.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-white/80 text-amber-700 px-3 py-1 rounded-full border border-amber-200">Banner Diskon</span>
+                    <span class="text-xs bg-white/80 text-amber-700 px-3 py-1 rounded-full border border-amber-200">Flash Sale</span>
+                    <span class="text-xs bg-white/80 text-amber-700 px-3 py-1 rounded-full border border-amber-200">Iklan Produk</span>
+                </div>
+            </div>
+
+            <!-- HR & Rekrutmen -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 p-7 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">💼</div>
+                <span class="inline-block text-xs font-bold text-blue-600 uppercase tracking-wider bg-blue-100 px-3 py-1 rounded-full mb-4">HR & Rekrutmen</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Poster Lowongan Kerja</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Visual lowongan eye-catching untuk LinkedIn & Instagram. Tanpa skill desain, langsung profesional.</p>
+            </div>
+
+            <!-- Admin Sosmed -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 p-7 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">📱</div>
+                <span class="inline-block text-xs font-bold text-emerald-600 uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full mb-4">Admin Sosmed</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Konten Feed Harian</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Kelola banyak akun sekaligus. Carousel, quote, reels caption — 3x lebih cepat dari biasanya.</p>
+            </div>
+
+            <!-- Edukasi & Kursus -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-violet-50 to-purple-50 border border-violet-100 p-7 hover:shadow-xl hover:shadow-violet-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">🎓</div>
+                <span class="inline-block text-xs font-bold text-violet-600 uppercase tracking-wider bg-violet-100 px-3 py-1 rounded-full mb-4">Edukasi & Kursus</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Infografis & Materi Belajar</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Konten edukasi, infografis tips, dan materi kursus yang informatif dan enak dilihat.</p>
+            </div>
+
+            <!-- Event & Acara -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100 p-7 hover:shadow-xl hover:shadow-rose-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">🎉</div>
+                <span class="inline-block text-xs font-bold text-rose-600 uppercase tracking-wider bg-rose-100 px-3 py-1 rounded-full mb-4">Event & Acara</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Poster & Undangan Digital</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Webinar, seminar, gathering, launching produk — semua ada template posternya, tinggal generate.</p>
+            </div>
+
+            <!-- E-Commerce - Featured (spans 2 cols) -->
+            <div class="xl:col-span-2 group relative overflow-hidden rounded-3xl bg-gradient-to-br from-pink-50 to-fuchsia-50 border border-pink-100 p-8 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-8 -right-8 text-[120px] opacity-10 group-hover:opacity-20 transition-opacity select-none">🛍️</div>
+                <span class="inline-block text-xs font-bold text-pink-600 uppercase tracking-wider bg-pink-100 px-3 py-1 rounded-full mb-4">E-Commerce & Toko Online</span>
+                <h3 class="text-xl font-extrabold text-slate-900 mb-2">Launching Produk & Konten Toko</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">Teaser produk baru, unboxing visual, konten testimoni pelanggan, dan review yang mendorong konversi penjualan secara konsisten.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-white/80 text-pink-700 px-3 py-1 rounded-full border border-pink-200">Product Teaser</span>
+                    <span class="text-xs bg-white/80 text-pink-700 px-3 py-1 rounded-full border border-pink-200">Testimoni</span>
+                    <span class="text-xs bg-white/80 text-pink-700 px-3 py-1 rounded-full border border-pink-200">Review Visual</span>
+                </div>
+            </div>
+
+            <!-- Kuliner & F&B -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-orange-50 to-red-50 border border-orange-100 p-7 hover:shadow-xl hover:shadow-orange-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">🍽️</div>
+                <span class="inline-block text-xs font-bold text-orange-600 uppercase tracking-wider bg-orange-100 px-3 py-1 rounded-full mb-4">Kuliner & F&B</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Menu & Promo Restoran</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Visual menu baru, promo paket makan, konten behind-the-scenes dapur yang bikin ngiler.</p>
+            </div>
+
+            <!-- Corporate -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-cyan-50 to-sky-50 border border-cyan-100 p-7 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">🏢</div>
+                <span class="inline-block text-xs font-bold text-cyan-600 uppercase tracking-wider bg-cyan-100 px-3 py-1 rounded-full mb-4">Corporate & Perusahaan</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Company Profile & Branding</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Konten profil perusahaan, milestone, dan campaign internal yang terlihat profesional.</p>
+            </div>
+
+            <!-- Motivasi & Lifestyle -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-yellow-50 to-amber-50 border border-yellow-100 p-7 hover:shadow-xl hover:shadow-yellow-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">✨</div>
+                <span class="inline-block text-xs font-bold text-yellow-600 uppercase tracking-wider bg-yellow-100 px-3 py-1 rounded-full mb-4">Motivasi & Lifestyle</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Quote & Konten Inspiratif</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Quote motivasi, konten self-improvement, dan lifestyle yang relate dengan audiens kamu.</p>
+            </div>
+
+            <!-- Property & Real Estate -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-lime-50 to-green-50 border border-lime-100 p-7 hover:shadow-xl hover:shadow-lime-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">🏠</div>
+                <span class="inline-block text-xs font-bold text-lime-600 uppercase tracking-wider bg-lime-100 px-3 py-1 rounded-full mb-4">Properti & Real Estate</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Listing & Promo Properti</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Visual listing rumah, apartemen, dan ruko yang menarik calon pembeli di media sosial.</p>
+            </div>
+
+            <!-- Kesehatan & Klinik - Featured (spans 2 cols) -->
+            <div class="xl:col-span-2 group relative overflow-hidden rounded-3xl bg-gradient-to-br from-teal-50 to-emerald-50 border border-teal-100 p-8 hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-8 -right-8 text-[120px] opacity-10 group-hover:opacity-20 transition-opacity select-none">🏥</div>
+                <span class="inline-block text-xs font-bold text-teal-600 uppercase tracking-wider bg-teal-100 px-3 py-1 rounded-full mb-4">Kesehatan & Klinik</span>
+                <h3 class="text-xl font-extrabold text-slate-900 mb-2">Edukasi Kesehatan & Promo Layanan</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">Konten edukasi kesehatan, promo paket layanan klinik, jadwal dokter, dan tips hidup sehat yang mudah dipahami pasien.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs bg-white/80 text-teal-700 px-3 py-1 rounded-full border border-teal-200">Edukasi Pasien</span>
+                    <span class="text-xs bg-white/80 text-teal-700 px-3 py-1 rounded-full border border-teal-200">Promo Layanan</span>
+                    <span class="text-xs bg-white/80 text-teal-700 px-3 py-1 rounded-full border border-teal-200">Tips Kesehatan</span>
+                </div>
+            </div>
+
+            <!-- Travel & Wisata -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-50 to-blue-50 border border-sky-100 p-7 hover:shadow-xl hover:shadow-sky-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">✈️</div>
+                <span class="inline-block text-xs font-bold text-sky-600 uppercase tracking-wider bg-sky-100 px-3 py-1 rounded-full mb-4">Travel & Wisata</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Paket Tour & Destinasi</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Konten paket wisata, destinasi hits, dan travel guide yang bikin followers pengen langsung booking.</p>
+            </div>
+
+            <!-- Fashion & Beauty -->
+            <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-fuchsia-50 to-purple-50 border border-fuchsia-100 p-7 hover:shadow-xl hover:shadow-fuchsia-500/10 transition-all duration-300 hover:-translate-y-1">
+                <div class="absolute -bottom-6 -right-6 text-[90px] opacity-10 group-hover:opacity-20 transition-opacity select-none">👗</div>
+                <span class="inline-block text-xs font-bold text-fuchsia-600 uppercase tracking-wider bg-fuchsia-100 px-3 py-1 rounded-full mb-4">Fashion & Beauty</span>
+                <h3 class="text-lg font-extrabold text-slate-900 mb-2">Lookbook & Promo Koleksi</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Visual OOTD, lookbook koleksi terbaru, dan konten beauty tutorial yang estetik dan on-trend.</p>
+            </div>
+
+          
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="mt-16 text-center">
+            <p class="text-slate-500 text-base mb-6">Dan masih banyak lagi use case lainnya yang bisa kamu eksplorasi...</p>
+            <a href="#cta" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary-dark transition-all shadow-lg shadow-primary/20 active:scale-95">
+                Mulai Sekarang — Gratis Coba
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
 
 <!-- Testimonials Section -->
 <section class="py-20 relative overflow-hidden bg-slate-50">

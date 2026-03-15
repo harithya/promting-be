@@ -83,7 +83,7 @@
                 </nav>
 
                 <div class="flex items-center gap-1 sm:gap-2 shrink-0">
-                    <a href="{{ env('RIA_PROMPT_URL', '/') }}" target="_blank" class="hidden sm:inline-flex items-center justify-center bg-primary text-white px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold hover:bg-primary-dark transition-colors whitespace-nowrap">
+                    <a href="{{ env('RIA_PROMPT_URL', '/') }}"  class="hidden sm:inline-flex items-center justify-center bg-primary text-white px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold hover:bg-primary-dark transition-colors whitespace-nowrap">
                         Login Sekarang
                     </a>
 

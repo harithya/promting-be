@@ -60,7 +60,7 @@ class LeadController extends Controller
             'order_items' => [
                 [
                     'sku' => 'RIA-LIFETIME',
-                    'name' => 'RIA Prompt - Lifetime Access',
+                    'name' => 'Hade Hub - Lifetime Access',
                     'price' => 110000,
                     'quantity' => 1,
                     'product_url' => url('/'),

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RIA Prompt - AI Image Prompt Builder Profesional</title>
+    <title>Hade Hub - AI Image Prompt Builder Profesional</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -125,7 +125,7 @@
                 </div>
                 <div
                     class="bg-white rounded-2xl p-2 shadow-2xl border border-slate-100 overflow-hidden transform group-hover:-translate-y-2 transition-transform duration-500">
-                    <img src="{{ asset('images/dashboard-mockup.png') }}" alt="RIA Prompt Dashboard"
+                    <img src="{{ asset('images/dashboard-mockup.png') }}" alt="Hade Hub Dashboard"
                         class="w-full rounded-xl">
                 </div>
                 <!-- Floating elements -->
@@ -268,7 +268,7 @@
 
                 <div>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-6">8 Kategori Konten dengan Ratusan Contoh Siap Pakai</h2>
-                    <p class="text-lg text-slate-600 mb-8">RIA Prompt menyediakan prompt terstruktur untuk berbagai kebutuhan konten. Dari promosi, edukasi, hingga entertainment - semuanya dengan customizable output sesuai keinginan Anda.</p>
+                    <p class="text-lg text-slate-600 mb-8">Hade Hub menyediakan prompt terstruktur untuk berbagai kebutuhan konten. Dari promosi, edukasi, hingga entertainment - semuanya dengan customizable output sesuai keinginan Anda.</p>
                     <ul class="space-y-4 mb-10">
                         <li class="flex items-center gap-3 font-semibold text-slate-700">
                             <div
@@ -313,7 +313,7 @@
                     </ul>
                     <a href="#cta"
                         class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-primary-dark transition-all shadow-xl shadow-primary/30 group">
-                        Coba RIA Prompt Sekarang
+                        Coba Hade Hub Sekarang
                         <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -461,7 +461,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Hasil Konten Visual dari Prompt Kami</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">Lihat contoh hasil konten visual yang dihasilkan menggunakan prompt terstruktur dari RIA Prompt di berbagai AI platform.</p>
+                <p class="text-slate-600 max-w-2xl mx-auto">Lihat contoh hasil konten visual yang dihasilkan menggunakan prompt terstruktur dari Hade Hub di berbagai AI platform.</p>
             </div>
 
             <!-- Slider Container -->
@@ -607,7 +607,7 @@
             </div>
 
             <div class="text-center mt-12">
-                <p class="text-slate-600 mb-2 font-semibold">Semua hasil visual di atas dibuat menggunakan prompt dari RIA Prompt</p>
+                <p class="text-slate-600 mb-2 font-semibold">Semua hasil visual di atas dibuat menggunakan prompt dari Hade Hub</p>
                 <p class="text-sm text-slate-500 mb-6">Compatible dengan berbagai AI image generator</p>
                 <div class="flex flex-wrap justify-center gap-3">
                     <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-slate-700 border border-slate-200">Midjourney</span>
@@ -623,7 +623,7 @@
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Mengapa Harus Menggunakan RIA Prompt?</h2>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Mengapa Harus Menggunakan Hade Hub?</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto">Platform yang dirancang untuk memaksimalkan produktivitas dan kualitas konten Anda.</p>
             </div>
 
@@ -687,7 +687,7 @@
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100">
                     <button class="w-full px-6 py-5 text-left flex justify-between items-center group">
-                        <span class="font-bold text-slate-900 group-hover:text-primary transition-colors">Apakah RIA Prompt gratis?</span>
+                        <span class="font-bold text-slate-900 group-hover:text-primary transition-colors">Apakah Hade Hub gratis?</span>
                         <svg class="w-5 h-5 text-slate-400 group-hover:text-primary transition-transform"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -695,7 +695,7 @@
                         </svg>
                     </button>
                     <div class="px-6 pb-5 text-slate-600 text-sm leading-relaxed">
-                        Ya! Anda dapat mencoba RIA Prompt secara gratis dengan akses ke semua kategori dasar. Kami juga menyediakan paket premium untuk fitur tambahan dan generate tanpa batas.
+                        Ya! Anda dapat mencoba Hade Hub secara gratis dengan akses ke semua kategori dasar. Kami juga menyediakan paket premium untuk fitur tambahan dan generate tanpa batas.
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100">
@@ -708,7 +708,7 @@
                         </svg>
                     </button>
                     <div class="px-6 pb-5 text-slate-600 text-sm leading-relaxed">
-                        RIA Prompt mendukung semua AI provider populer seperti ChatGPT, Google Gemini, Claude, dan AI lainnya. Prompt yang dihasilkan bersifat universal dan dapat digunakan di platform manapun.
+                        Hade Hub mendukung semua AI provider populer seperti ChatGPT, Google Gemini, Claude, dan AI lainnya. Prompt yang dihasilkan bersifat universal dan dapat digunakan di platform manapun.
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100">
@@ -795,7 +795,7 @@
 
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl sm:text-6xl font-extrabold text-slate-900 mb-8 leading-[1.2]">Buat Konten Visual Berkualitas <span class="text-primary italic">Dengan Mudah</span></h2>
-            <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">Gabung dengan ribuan creator yang sudah menggunakan RIA Prompt untuk menghasilkan konten profesional dengan cepat dan efisien.</p>
+            <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">Gabung dengan ribuan creator yang sudah menggunakan Hade Hub untuk menghasilkan konten profesional dengan cepat dan efisien.</p>
 
             <a href="/register"
                 class="inline-flex items-center justify-center bg-primary text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-primary-dark transition-all shadow-2xl shadow-primary/30 active:scale-95 mb-8">
@@ -837,7 +837,7 @@
                                     d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <span class="text-xl font-extrabold tracking-tight text-white">RIA Prompt</span>
+                        <span class="text-xl font-extrabold tracking-tight text-white">Hade Hub</span>
                     </div>
                     <p class="text-sm leading-relaxed mb-6">#1 AI Content Generator. Kami mempermudah pembuatan konten visual profesional melalui prompt terstruktur yang mudah digunakan dan compatible dengan berbagai AI provider.</p>
                 </div>
@@ -880,7 +880,7 @@
             </div>
 
             <div class="pt-8 border-t border-white/5 text-center text-xs">
-                &copy; {{ date('Y') }} RIA Prompt. All rights reserved. Generate Konten Profesional dengan AI.
+                &copy; {{ date('Y') }} Hade Hub. All rights reserved. Generate Konten Profesional dengan AI.
             </div>
         </div>
     </footer>

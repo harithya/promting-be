@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>@yield('title', 'RIA Prompt - AI Image Prompt Builder Profesional')</title>
-    <meta name="description" content="@yield('description', 'RIA Prompt - Buat konten visual profesional dengan cepat. Copy prompt, paste ke ChatGPT, langsung beres. Ribuan contoh prompt siap pakai untuk promosi, edukasi, event & lebih banyak lagi. Akses lifetime, hemat 95% biaya.')">
-    <meta name="keywords" content="@yield('keywords', 'RIA Prompt, AI prompt, prompt ChatGPT, generate konten visual, AI image prompt, prompt builder, konten marketing, design cepat')">
-    <meta name="author" content="RIA Prompt">
+    <title>@yield('title', 'Hade Hub - AI Image Prompt Builder Profesional')</title>
+    <meta name="description" content="@yield('description', 'Hade Hub - Buat konten visual profesional dengan cepat. Copy prompt, paste ke ChatGPT, langsung beres. Ribuan contoh prompt siap pakai untuk promosi, edukasi, event & lebih banyak lagi. Akses lifetime, hemat 95% biaya.')">
+    <meta name="keywords" content="@yield('keywords', 'Hade Hub, AI prompt, prompt ChatGPT, generate konten visual, AI image prompt, prompt builder, konten marketing, design cepat')">
+    <meta name="author" content="Hade Hub">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('faavicon.png') }}?v=1">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('faavicon.png') }}?v=1">
     <link rel="shortcut icon" href="{{ asset('faavicon.png') }}?v=1" type="image/png">
     <link rel="apple-touch-icon" href="{{ asset('faavicon.png') }}?v=1">
-    <meta property="og:title" content="@yield('og_title', 'RIA Prompt - AI Image Prompt Builder Profesional')">
+    <meta property="og:title" content="@yield('og_title', 'Hade Hub - AI Image Prompt Builder Profesional')">
     <meta property="og:description" content="@yield('og_description', 'Buat konten visual profesional dengan cepat. Copy prompt ke ChatGPT, langsung beres. Ribuan contoh prompt siap pakai.')">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +71,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="flex justify-between items-center h-14 sm:h-16 min-h-[56px] gap-2 min-w-0">
                 <a href="/" class="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0">
-                    <img src="{{ asset('images/logo.png') }}" alt="RIA Prompt Logo" class="h-7 sm:h-9 md:h-10 w-auto max-h-10 object-contain">
+                    <img src="{{ asset('images/logo.png') }}" alt="Hade Hub Logo" class="h-7 sm:h-9 md:h-10 w-auto max-h-10 object-contain">
                 </a>
 
                 <nav class="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 shrink-0">
@@ -163,7 +163,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 md:col-span-1">
                     <div class="flex items-center gap-3 mb-6">
-                        <img src="{{ asset('images/logo.png') }}" alt="RIA Prompt Logo" class="h-8 w-auto">
+                        <img src="{{ asset('images/logo.png') }}" alt="Hade Hub Logo" class="h-8 w-auto">
                     </div>
                     <p class="text-sm leading-relaxed mb-6">#1 AI Content Generator. Kami mempermudah pembuatan konten
                         visual profesional melalui prompt terstruktur yang mudah digunakan dan compatible dengan
@@ -219,7 +219,7 @@
             </div>
 
             <div class="pt-8 border-t border-white/5 text-center text-xs">
-                &copy; {{ date('Y') }} RIA Prompt. All rights reserved. Generate Konten Profesional dengan AI.
+                &copy; {{ date('Y') }} Hade Hub. All rights reserved. Generate Konten Profesional dengan AI.
             </div>
         </div>
     </footer>

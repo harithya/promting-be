@@ -202,7 +202,7 @@
 
             <div
                 class="relative bg-white rounded-3xl p-2 sm:p-3 shadow-[0_32px_96px_-16px_rgba(39,155,132,0.15)] border border-slate-100 overflow-hidden transform group-hover:-translate-y-3 transition-transform duration-700">
-                <img src="{{ asset('images/dashboard-mockup2.png') }}" alt="RIA Prompt Dashboard"
+                <img src="{{ asset('images/hero.png') }}" alt="Hade Hub Dashboard"
                     class="w-full rounded-2xl shadow-inner border border-slate-50">
             </div>
 
@@ -219,7 +219,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-slate-400 font-bold uppercase tracking-wider">Content Hub</p>
-                        <p class="text-sm font-extrabold text-slate-800">8+ Kategori Lengkap</p>
+                        <p class="text-sm font-extrabold text-slate-800">Kategori Lengkap</p>
                     </div>
                 </div>
             </div>
@@ -255,7 +255,7 @@
                     <div>
                         <p class="text-sm text-slate-400 font-bold uppercase tracking-wider">Speed Optimized
                         </p>
-                        <p class="text-sm font-extrabold text-slate-800">Generate 2x Lebih Cepat</p>
+                        <p class="text-sm font-extrabold text-slate-800">Generate Sangat Cepat</p>
                     </div>
                 </div>
             </div>
@@ -418,7 +418,7 @@
                 </h2>
 
                 <p class="text-lg text-slate-600 mb-10 leading-relaxed">
-                    Hentikan kebuntuan kreatif sekarang juga. RIA Prompt memberikan Anda akses ke struktur prompt
+                    Hentikan kebuntuan kreatif sekarang juga. Hade Hub memberikan Anda akses ke struktur prompt
                     profesional yang mencakup <span class="font-bold text-slate-900 italic">setiap sudut</span>
                     kebutuhan konten digital Anda.
                 </p>
@@ -625,7 +625,7 @@
             <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Hasil Konten Visual dari Prompt
                 Kami</h2>
             <p class="text-slate-600 max-w-2xl mx-auto">Lihat berbagai contoh konten yang dihasilkan menggunakan
-                RIA Prompt untuk berbagai kategori</p>
+                Hade Hub untuk berbagai kategori</p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -790,7 +790,7 @@
             <h2 class="text-3xl sm:text-5xl font-extrabold mb-6 leading-tight">Masih Mau Bayar <span
                     class="text-red-500">Jutaan Rupiah</span> <br> Untuk Sekali Desain?</h2>
             <p class="text-slate-400 max-w-2xl mx-auto text-lg">Bandingkan sendiri efisiensi antara menggunakan
-                jasa desainer konvensional dengan kekuatan AI di RIA Prompt.</p>
+                jasa desainer konvensional dengan kekuatan AI di Hade Hub.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
@@ -888,7 +888,7 @@
                 </ul>
             </div>
 
-            <!-- RIA Prompt AI -->
+            <!-- Hade Hub AI -->
             <div
                 class="bg-primary/10 border-2 border-primary p-8 sm:p-12 rounded-[3rem] relative group overflow-hidden">
                 <div class="absolute top-0 right-0 p-8 opacity-10">
@@ -901,7 +901,7 @@
                         class="w-12 h-12 bg-primary text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg shadow-primary/30">
                         ⚡
                     </div>
-                    <h3 class="text-2xl font-bold">RIA Prompt + AI Power</h3>
+                    <h3 class="text-2xl font-bold">Hade Hub + AI Power</h3>
                 </div>
                 <ul class="space-y-6">
                     <li class="flex items-start gap-4">
@@ -1134,7 +1134,7 @@
             <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-5 leading-tight">
                 Satu Tool, <span class="text-gradient italic">Ribuan Use Case</span> Nyata
             </h2>
-            <p class="text-slate-500 max-w-2xl mx-auto text-lg">Dari perusahaan besar, UMKM, kreator konten, sampai freelancer — semua punya kebutuhan konten harian yang bisa diselesaikan dengan RIA Prompt.</p>
+            <p class="text-slate-500 max-w-2xl mx-auto text-lg">Dari perusahaan besar, UMKM, kreator konten, sampai freelancer — semua punya kebutuhan konten harian yang bisa diselesaikan dengan Hade Hub.</p>
         </div>
 
         <!-- Bento Grid Layout -->
@@ -1309,7 +1309,7 @@
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                             <lucide-icon name="star" class="w-3.5 h-3.5 fill-current"></lucide-icon>
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-3 italic relative z-10 line-clamp-3">"Pengen design cepet buat konten. Tinggal copy prompt dari RIA, paste ke ChatGPT, langsung beres!"</p>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-3 italic relative z-10 line-clamp-3">"Pengen design cepet buat konten. Tinggal copy prompt dari Hade Hub, paste ke ChatGPT, langsung beres!"</p>
                         <div class="mt-auto flex items-center gap-2.5 pt-3 border-t border-slate-200/80">
                             <div class="w-10 h-10 rounded-lg bg-white/80 flex items-center justify-center overflow-hidden ring-1 ring-slate-200 shrink-0">
                                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=450&h=450&auto=format&fit=crop" alt="Andi Pratama" class="w-full h-full object-cover">
@@ -1500,7 +1500,7 @@
                     <span
                         class="inline-block px-4 py-1 bg-white/20 rounded-full text-white text-xs font-bold uppercase tracking-wider mb-4">Lifetime
                         Access</span>
-                    <h3 class="text-2xl font-bold text-white mb-2">RIA Prompt Premium</h3>
+                    <h3 class="text-2xl font-bold text-white mb-2">Hade Hub Premium</h3>
                     <p class="text-white/80 text-sm mb-8">Akses selamanya tanpa biaya berlangganan bulanan</p>
 
                     <div class="flex items-end gap-2 mb-4">
@@ -1631,7 +1631,7 @@
         <h2 class="text-4xl sm:text-6xl font-extrabold text-slate-900 mb-8 leading-[1.2]">Buat Konten Visual
             Berkualitas <span class="text-primary italic">Dengan Mudah</span></h2>
         <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">Gabung dengan ribuan creator yang
-            sudah menggunakan RIA Prompt untuk menghasilkan konten profesional dengan cepat dan efisien.</p>
+            sudah menggunakan Hade Hub untuk menghasilkan konten profesional dengan cepat dan efisien.</p>
 
         <button type="button" onclick="openLeadModal()"
             class="inline-flex items-center justify-center bg-primary text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-primary-dark transition-all shadow-2xl shadow-primary/30 active:scale-95 mb-8">
@@ -1666,7 +1666,7 @@
         <div class="text-center mb-16">
             <span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Help Center</span>
             <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-6">Pusat Bantuan & FAQ</h2>
-            <p class="text-slate-600 text-lg mb-16">Temukan jawaban untuk semua pertanyaan Anda tentang RIA Prompt.
+            <p class="text-slate-600 text-lg mb-16">Temukan jawaban untuk semua pertanyaan Anda tentang Hade Hub.
             </p>
         </div>
 
@@ -1674,7 +1674,7 @@
             <div
                 class="faq-item bg-white rounded-2xl border border-slate-100 overflow-hidden transition-all hover:shadow-md">
                 <button class="w-full px-6 py-5 text-left flex justify-between items-center group">
-                    <span class="font-bold text-slate-900 group-hover:text-primary transition-colors">Apa itu RIA
+                    <span class="font-bold text-slate-900 group-hover:text-primary transition-colors">Apa itu Hade Hub
                         Prompt?</span>
                     <svg class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -1682,8 +1682,8 @@
                     </svg>
                 </button>
                 <div class="px-6 pb-5 text-slate-600 text-sm leading-relaxed hidden">
-                    RIA Prompt adalah platform pembangunan prompt terstruktur untuk membantu Anda menghasilkan
-                    konten visual berkualitas tinggi di berbagai platform AI (seperti Midjourney, DALL-E, ChatGPT)
+                    Hade Hub adalah platform pembangunan prompt terstruktur untuk membantu Anda menghasilkan
+                    konten visual berkualitas tinggi di berbagai platform AI (seperti Chat GPT, Gemini dll)
                     tanpa perlu keahlian teknis khusus.
                 </div>
             </div>
@@ -1700,7 +1700,7 @@
                 </button>
                 <div class="px-6 pb-5 text-slate-600 text-sm leading-relaxed hidden">
                     Cukup pilih kategori konten (misal: Marketing), pilih tone yang diinginkan, isi detail konten
-                    Anda, dan RIA Prompt akan membuatkan prompt terstruktur yang siap Anda copy-paste ke AI favorit
+                    Anda, dan Hade Hub akan membuatkan prompt terstruktur yang siap Anda copy-paste ke AI favorit
                     Anda.
                 </div>
             </div>
@@ -1732,7 +1732,7 @@
                     </svg>
                 </button>
                 <div class="px-6 pb-5 text-slate-600 text-sm leading-relaxed hidden">
-                    RIA Prompt bersifat universal. Prompt yang dihasilkan dioptimalkan untuk Midjourney, DALL-E 3,
+                    Hade Hub bersifat universal. Prompt yang dihasilkan dioptimalkan untuk Midjourney, DALL-E 3,
                     Stable Diffusion, Leonardo AI, serta LLM seperti ChatGPT, Gemini, dan Claude.
                 </div>
             </div>
@@ -1748,7 +1748,7 @@
                     </svg>
                 </button>
                 <div class="px-6 pb-5 text-slate-600 text-sm leading-relaxed hidden">
-                    Tentu! RIA Prompt responsif penuh. Anda bisa membukanya melalui browser di smartphone Anda dan
+                    Tentu! Hade Hub responsif penuh. Anda bisa membukanya melalui browser di smartphone Anda dan
                     langsung menyalin prompt di sana.
                 </div>
             </div>

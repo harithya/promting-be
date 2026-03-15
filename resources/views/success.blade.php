@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('title',
-    $transaction->status === 'PAID' ? 'Pembayaran Berhasil - RIA Prompt' :
-    ($transaction->status === 'UNPAID' ? 'Menunggu Pembayaran - RIA Prompt' : 'Pembayaran Gagal - RIA Prompt')
+    $transaction->status === 'PAID' ? 'Pembayaran Berhasil - Hade Hub' :
+    ($transaction->status === 'UNPAID' ? 'Menunggu Pembayaran - Hade Hub' : 'Pembayaran Gagal - Hade Hub')
 )
 
 @section('styles')
@@ -55,7 +55,7 @@
                     <div class="text-center mb-8">
                         @if($transaction->status === 'PAID')
                             <h1 class="text-3xl font-extrabold text-slate-900 mb-3 animate-fade-up-delay-1">Pembayaran Berhasil!</h1>
-                            <p class="text-slate-600 animate-fade-up-delay-2">Akses lifetime RIA Prompt Anda sudah aktif. Cek WhatsApp untuk kredensial login.</p>
+                            <p class="text-slate-600 animate-fade-up-delay-2">Akses lifetime Hade Hub Anda sudah aktif. Cek WhatsApp untuk kredensial login.</p>
                         @elseif($transaction->status === 'UNPAID')
                             <h1 class="text-3xl font-extrabold text-slate-900 mb-3 animate-fade-up-delay-1">Menunggu Pembayaran</h1>
                             <p class="text-slate-600 animate-fade-up-delay-2">Silakan selesaikan pembayaran untuk mengaktifkan akses lifetime Anda.</p>

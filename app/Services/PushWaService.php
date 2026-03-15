@@ -99,7 +99,7 @@ class PushWaService
     {
         $message = "Halo *{$name}*! 🎉\n\n";
         $message .= "Pembayaran Anda telah *berhasil dikonfirmasi*!\n\n";
-        $message .= "🔑 *Kredensial Akses RIA Prompt:*\n";
+        $message .= "🔑 *Kredensial Akses Hade Hub:*\n";
         $message .= "• Email: `{$email}`\n";
         $message .= "• Password: `{$password}`\n\n";
         $message .= "🚀 Mulai generate konten visual profesional sekarang!\n\n";

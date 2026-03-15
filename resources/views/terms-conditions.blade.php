@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Syarat & Ketentuan - RIA Prompt')
+@section('title', 'Syarat & Ketentuan - Hade Hub')
 
 @section('content')
     <main class="pt-32 pb-24">
@@ -12,7 +12,7 @@
 
                 <section>
                     <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Penerimaan Ketentuan</h2>
-                    <p>Dengan mengakses dan menggunakan RIA Prompt, Anda setuju untuk terikat oleh Syarat & Ketentuan
+                    <p>Dengan mengakses dan menggunakan Hade Hub, Anda setuju untuk terikat oleh Syarat & Ketentuan
                         ini. Jika Anda tidak setuju dengan bagian mana pun dari ketentuan ini, Anda tidak boleh
                         menggunakan layanan kami.</p>
                 </section>
@@ -25,13 +25,13 @@
 
                 <section>
                     <h2 class="text-2xl font-bold text-slate-900 mb-4">3. Kekayaan Intelektual</h2>
-                    <p>Seluruh konten, fitur, dan fungsionalitas RIA Prompt adalah milik eksklusif kami dan dilindungi
+                    <p>Seluruh konten, fitur, dan fungsionalitas Hade Hub adalah milik eksklusif kami dan dilindungi
                         oleh hukum hak cipta dan merek dagang internasional.</p>
                 </section>
 
                 <section>
                     <h2 class="text-2xl font-bold text-slate-900 mb-4">4. Batasan Tanggung Jawab</h2>
-                    <p>Dalam hal apa pun RIA Prompt tidak bertanggung jawab atas kerusakan tidak langsung, insidental,
+                    <p>Dalam hal apa pun Hade Hub tidak bertanggung jawab atas kerusakan tidak langsung, insidental,
                         khusus, konsekuensial, atau punitif yang timbul dari penggunaan layanan oleh Anda.</p>
                 </section>
 

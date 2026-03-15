@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Kebijakan Refund - RIA Prompt')
+@section('title', 'Kebijakan Refund - Hade Hub')
 
 @section('content')
     <main class="pt-32 pb-24">
@@ -12,12 +12,12 @@
 
                 <section>
                     <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Kebijakan Tidak Ada Refund</h2>
-                    <p>RIA Prompt tidak menyediakan refund atau pengembalian dana untuk semua pembelian. Setelah pembayaran berhasil dilakukan, transaksi dianggap final dan tidak dapat dibatalkan.</p>
+                    <p>Hade Hub tidak menyediakan refund atau pengembalian dana untuk semua pembelian. Setelah pembayaran berhasil dilakukan, transaksi dianggap final dan tidak dapat dibatalkan.</p>
                 </section>
 
                 <section>
                     <h2 class="text-2xl font-bold text-slate-900 mb-4">2. Akses Digital</h2>
-                    <p>Produk RIA Prompt merupakan produk digital yang memberikan akses lifetime. Dengan membeli, Anda mendapatkan akses penuh ke seluruh fitur dan konten. Kami menyarankan Anda untuk mencoba demo atau mempelajari informasi produk sebelum melakukan pembelian.</p>
+                    <p>Produk Hade Hub merupakan produk digital yang memberikan akses lifetime. Dengan membeli, Anda mendapatkan akses penuh ke seluruh fitur dan konten. Kami menyarankan Anda untuk mencoba demo atau mempelajari informasi produk sebelum melakukan pembelian.</p>
                 </section>
 
                 <section>

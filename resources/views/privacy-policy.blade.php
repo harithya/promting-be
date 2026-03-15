@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Kebijakan Privasi - RIA Prompt')
+@section('title', 'Kebijakan Privasi - Hade Hub')
 
 @section('content')
     <main class="pt-32 pb-24">
@@ -20,13 +20,13 @@
                 <section>
                     <h2 class="text-2xl font-bold text-slate-900 mb-4">2. Penggunaan Informasi</h2>
                     <p>Kami menggunakan informasi yang dikumpulkan untuk menyediakan, memelihara, dan meningkatkan
-                        layanan kami, untuk mengembangkan layanan baru, dan untuk melindungi RIA Prompt serta pengguna
+                        layanan kami, untuk mengembangkan layanan baru, dan untuk melindungi Hade Hub serta pengguna
                         kami.</p>
                 </section>
 
                 <section>
                     <h2 class="text-2xl font-bold text-slate-900 mb-4">3. Keamanan Data</h2>
-                    <p>Kami bekerja keras untuk melindungi RIA Prompt dan pengguna kami dari akses tanpa izin,
+                    <p>Kami bekerja keras untuk melindungi Hade Hub dan pengguna kami dari akses tanpa izin,
                         perubahan, pengungkapan, atau penghancuran informasi yang kami miliki.</p>
                 </section>
 
